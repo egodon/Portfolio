@@ -1,0 +1,18 @@
+.section-skills {
+  height: 106.25rem;
+
+
+
+  &--content {
+
+    padding: 3rem 7rem;
+
+
+    p {
+      padding-top: 3rem;
+      color: $darkGray;
+    }
+
+  }
+
+}

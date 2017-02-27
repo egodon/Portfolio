@@ -1,0 +1,44 @@
+.section-banner {
+  height: 106.25rem;
+
+
+
+  &--center {
+    padding: 20rem 7rem;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+
+  }
+
+  h1 {
+    color: $almostWhite;
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 2.4rem;
+    color: $almostWhite;
+    width: 650px;
+  }
+
+  &--button{
+    width: 100%;
+    position: absolute;
+    bottom: 200px;
+    text-align: center;
+
+
+    button {
+      font-size: 2.4rem;
+      color: $almostWhite;
+      width: 500px;
+      height: 70px;
+      color: $accentColour;
+      line-height: 30px;
+    }
+
+  }
+
+
+}
