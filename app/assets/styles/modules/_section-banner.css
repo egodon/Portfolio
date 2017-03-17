@@ -1,19 +1,24 @@
 .section-banner {
   height: 106.25rem;
 
-
-
   &--center {
-    padding: 20rem 7rem;
+    margin-top: 10rem;
+    padding: 15rem 7rem;
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
+    align-items: center;
 
   }
 
   h1 {
-    color: $almostWhite;
-    font-size: 4rem;
+    color: $darkGray;
+    font-weight: bold;
+    font-size: 4.8rem;
+  }
+
+  h2 {
+    color: $darkGray;
+    font-size: 2.6rem;
   }
 
   p {
@@ -23,19 +28,25 @@
   }
 
   &--button{
+
     width: 100%;
     position: absolute;
-    bottom: 200px;
+    bottom: 100px;
     text-align: center;
+    padding-bottom: 1rem;
 
 
     button {
+      border: 1px solid white;
       font-size: 2.4rem;
-      color: $almostWhite;
-      width: 500px;
-      height: 70px;
-      color: $accentColour;
-      line-height: 30px;
+      width: 100px;
+      height: 100px;
+    }
+
+    i {
+      position: absolute;
+      color: $darkGray;
+      transform: translate(-50%, -50%);
     }
 
   }

@@ -3,5 +3,8 @@
 @import "base/_global";
 @import "modules/_nav";
 @import "modules/_section-banner";
+@import "modules/_section-about";
 @import "modules/_section-skills";
 @import "modules/_section-projects";
+@import "modules/_section-contact";
+@import "modules/_footer";

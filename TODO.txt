@@ -1,0 +1,17 @@
+
+-Polish up contact section
+-Prevent body from scrolling when menu open with overflow: hidden;
+
+
+
+
+
+FEATURES ONCE FINISHED:
+-animate logo
+-Make dark mode
+-Add Google captcha widget
+
+OPTIMIZATION:
+-60fps animations
+-lazyload images
+-SVG all the things
