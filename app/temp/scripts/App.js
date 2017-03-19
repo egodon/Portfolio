@@ -94,6 +94,7 @@
 	    value: function toggleTheMenu() {
 	      this.navBtnExpand.toggleClass('nav-button__expanded--is-active');
 	      this.navBtn.toggleClass('nav-button--close-x');
+	      (0, _jquery2.default)("body").toggleClass('no-scroll');
 	    }
 	  }, {
 	    key: "hiddenBtn",

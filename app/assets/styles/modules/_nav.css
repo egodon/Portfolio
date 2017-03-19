@@ -12,6 +12,7 @@
   visibility: none;
   z-index: 5;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  transform: scale(1.2);
 
 
 
@@ -86,27 +87,54 @@
 
     &__expanded{
       background: $accentColour;
-      height: 120px;
-      width: 120px;
+      height: 102rem;
+      width: 102rem;
       border-radius: 50%;
       position: fixed;
-      right: 40px;
-      bottom: 100px;
-      transition: transform .2s ease-in-out, opacity .3s ease;
-      opacity: 0;
+      right: -715px;
+      bottom: -650px;
+      transition: transform .15s ease-in-out, opacity .3s ease;
+      opacity: 0.5;
+      transform: scale(0);
 
           ul{
             position: absolute;
-            right: 70px;
-            bottom: 60px;
+            padding: 60px;
+            left: 300px;
+            top: 190px;
+
           }
 
           li{
-            font-size: 0.1rem;
+            text-align: center;
+            font-size: 3.5rem;
+            color: $almostWhite;
+            border: 3px solid $almostWhite;
+            border-radius: 5px;
+            margin-top: 30px;
+            padding: 15px 30px;
+            position:relative;
           }
 
+          li.nav-item-1 {
+            left: 75px;
+          }
+
+          li.nav-item-2 {
+            left: 0px;
+          }
+
+          li.nav-item-3 {
+            right: 75px;
+          }
+
+          li.nav-item-4 {
+            right: 150px;
+          }
+
+
         &--is-active {
-          transform: scale(15);
+          transform: scale(1);
           opacity: 1;
 
 

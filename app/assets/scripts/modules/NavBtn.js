@@ -18,6 +18,7 @@ class NavBtn  {
   toggleTheMenu(){
     this.navBtnExpand.toggleClass('nav-button__expanded--is-active');
     this.navBtn.toggleClass('nav-button--close-x');
+    $("body").toggleClass('no-scroll');
 
   }
 
