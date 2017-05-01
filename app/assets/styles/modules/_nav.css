@@ -1,5 +1,5 @@
 .nav-button {
-  background: $accentColour;
+  background: $darkGray;
   height: 120px;
   width: 120px;
   border-radius: 50%;
@@ -14,7 +14,9 @@
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   transform: scale(1.2);
 
-
+  @mixin atLarge {
+    display: none;
+  }
 
   &::before {
     content: " ";
@@ -86,7 +88,7 @@
     }
 
     &__expanded{
-      background: $accentColour;
+      background: $darkGray;
       height: 102rem;
       width: 102rem;
       border-radius: 50%;

@@ -1,9 +1,9 @@
 
+-steal Affinity menu animation
+-add buttonsto project section
 
--Polish up contact section
-
-
-
+BUGS:
+-Fix nav menu btn when scroll up
 
 
 FEATURES ONCE FINISHED:
