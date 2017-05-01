@@ -1,16 +1,30 @@
 .section-contact {
   height: 150rem;
 
+  @mixin atLarge {
+    height: 70rem;
+  }
+
 
   &--content {
       padding: 3rem 7rem;
 
+    @mixin atLarge {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
 
       form {
         display: flex;
         justify-content:center;
         flex-direction: column;
+
+        @mixin atLarge {
+          box-shadow: 0 10px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+          padding: 2rem;
+        }
       }
 
       label:first-child{
@@ -21,15 +35,28 @@
         font-size: 2.4rem;
         margin-bottom: 0.5rem;
         color: $darkGray;
+
+        @mixin atLarge {
+          font-size: 1.4rem;
+        }
       }
 
       input {
         margin-bottom: 3rem;
         height: 6rem;
+
+        @mixin atLarge {
+          height: 1.5rem;
+          width: 100%;
+        }
       }
 
       textarea {
 
+          @mixin atLarge {
+            width: 50rem;
+            height: 20rem;
+          }
       }
 
       input, textarea {
@@ -38,7 +65,11 @@
         padding: 20px 20px;
         border: solid 2px rgba(255, 255, 255, 0.125);
         border-radius: 5px;
-        background: rgba(0, 0, 0, 0.25);
+        background: rgba(0, 0, 0, 0.15);
+
+        @mixin atLarge {
+          font-size: 1.125rem;
+        }
       }
 
       input:focus, textarea:focus {
@@ -52,16 +83,16 @@
         padding: 20px 20px;
         border: solid 2px rgba(255, 255, 255, 0.125);
         border-radius: 5px;
-        background: rgba(0, 0, 0, 0.25);
+        background: rgba(0, 0, 0, 0.15);
+
+        @mixin atLarge {
+          font-size: 1.4rem;
+          width: 30%;
+
+        }
 
       }
 
-      ul {
-        margin-top: 18rem;
-        padding: 0 5rem;
-        display: flex;
-        justify-content: space-between;
 
-      }
   }
 }

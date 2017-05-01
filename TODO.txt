@@ -1,6 +1,8 @@
 
+
+
+
 -steal Affinity menu animation
--add buttonsto project section
 
 BUGS:
 -Fix nav menu btn when scroll up

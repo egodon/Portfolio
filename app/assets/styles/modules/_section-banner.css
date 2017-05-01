@@ -1,5 +1,6 @@
 .section-banner {
-  height: 106.25rem;
+  height: 100rem;
+
 
   @mixin atLarge {
     height: 100vh;
@@ -9,8 +10,7 @@
   }
 
   &--center {
-    margin-top: 10rem;
-    padding: 15rem 7rem;
+    padding: 0rem 7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +18,7 @@
 
     @mixin atLarge {
       margin-top: 0;
-      padding: 4rem 7rem;
+      padding: 6rem 7rem;
 
     }
 
@@ -64,6 +64,29 @@
     width: 650px;
   }
 
+  ul {
+    margin-top: 2rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+
+    i {
+      margin: 0 1rem;
+      color: $darkGray;
+      transition: color .2s;
+
+      &:hover {
+        color: $accentColour;
+        cursor: pointer;
+      }
+
+      @mixin atLarge {
+        color: $almostWhite;
+      }
+    }
+  }
+
   &--button{
 
     width: 100%;
@@ -72,22 +95,14 @@
     text-align: center;
     padding-bottom: 1rem;
 
+      button {
+        border: 1px solid white;
+        font-size: 2.4rem;
+        width: 100px;
+        height: 100px;
+        display: none;
+      }
 
-    button {
-      border: 1px solid white;
-      font-size: 2.4rem;
-      width: 100px;
-      height: 100px;
-      display: none;
     }
-
-    i {
-      position: absolute;
-      color: $accentColour;
-      transform: translate(-50%, -50%);
-    }
-
-  }
-
 
 }

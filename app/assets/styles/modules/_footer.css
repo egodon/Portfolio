@@ -1,8 +1,18 @@
 footer {
 
 
+  @mixin atLarge {
+    height: 10rem;
+  }
+
+
   p{
     font-size: 2rem;
     text-align: center;
+
+    @mixin atLarge {
+      font-size: 1rem;
+    }
+
   }
 }

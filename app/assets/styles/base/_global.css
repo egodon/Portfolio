@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ccc;
     font-family: 'Open Sans', sans-serif;
     ::selection { background: $accentColour; }
     background: $almostWhite; /* fallback for old browsers */
@@ -28,6 +27,13 @@ button {
     background: transparent;
     cursor: pointer;
     border: none;
+}
+
+a {
+  padding: 10px 25px;
+  cursor: pointer;
+  text-decoration: none;
+  color: $almostBlack;
 }
 
 

@@ -2,7 +2,20 @@
   height: 106rem;
 
 
+  @mixin atLarge {
+    height: 25rem;
+  }
+
+
   &--content{
     padding: 3rem 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p {
+    width: 40rem;
+    font-size: 1.125rem;
   }
 }
