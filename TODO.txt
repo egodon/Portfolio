@@ -1,6 +1,6 @@
 
 
-
+MAKE NAV BAR FOR LARGE SCREENS
 
 -steal Affinity menu animation
 
