@@ -382,7 +382,7 @@ p, button, li, h4 {
 }
 .section-projects--article img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 @media (min-width: 1010px) {
@@ -398,7 +398,31 @@ p, button, li, h4 {
 @media (min-width: 1010px) {
     .section-projects--article p {
         max-width: 30rem;
+        margin-top: 2rem;
     }
+}
+.section-projects--article .btn-project {
+    border: 2px solid #222222;
+    width: 200px;
+    margin-bottom: 1rem;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.section-projects--article .btn-project:hover {
+    background:#222222;
+    color: #eef2f3;
+}
+@media (min-width: 1010px) {
+    .section-projects--article .btn-project {
+        font-size: 1rem;
+    }
+}
+.section-projects--article .btn-github {
+    border: 2px solid #1E88E5;
+}
+.section-projects--article .btn-github:hover {
+    background: #1E88E5;
+    color: #eef2f3;
 }
 .section-contact {
   height: 150rem;
