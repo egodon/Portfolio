@@ -1,5 +1,6 @@
 .section-about {
   height: 106rem;
+  background: $almostWhite;
 
 
   @mixin atLarge {

@@ -6,7 +6,7 @@
     height: 100vh;
     background-image: url('../../assets/images/overlay.png'), url('../../assets/images/banner.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center 80%;
   }
 
   &--center {
@@ -16,11 +16,10 @@
     align-items: center;
     z-index: 5;
 
-    @mixin atLarge {
-      margin-top: 0;
-      padding: 6rem 7rem;
-
-    }
+      @mixin atLarge {
+        margin-top: 0;
+        padding: 6rem 7rem;
+      }
 
   }
 
@@ -71,8 +70,8 @@
     justify-content: space-around;
 
 
-    i {
-      margin: 0 1rem;
+    li {
+      margin: 0 .1rem;
       color: $darkGray;
       transition: color .2s;
 

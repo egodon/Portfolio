@@ -21,9 +21,14 @@
         justify-content:center;
         flex-direction: column;
 
+
         @mixin atLarge {
           box-shadow: 0 10px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
           padding: 2rem;
+        }
+        @mixin atXLarge {
+          width: 44rem;
+          padding: 1rem;
         }
       }
 
@@ -39,6 +44,10 @@
         @mixin atLarge {
           font-size: 1.4rem;
         }
+
+        @mixin atXLarge{
+          font-size: 1.2rem;
+        }
       }
 
       input {
@@ -47,14 +56,13 @@
 
         @mixin atLarge {
           height: 1.5rem;
-          width: 100%;
+
         }
       }
 
       textarea {
-
+      resize: none;
           @mixin atLarge {
-            width: 50rem;
             height: 20rem;
           }
       }
