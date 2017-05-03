@@ -20,11 +20,6 @@ gulp.task('deleteDocsFolder', function(){
 	return del("./docs");
 });
 
-
-gulp.task('deleteDocsFolder', function(){
-	return del("./docs");
-});
-
 gulp.task('useminTrigger', ['deleteDocsFolder'], function(){
 	gulp.start('usemin');
 });
@@ -35,6 +30,11 @@ gulp.task('optimizeImages',['deleteDocsFolder'], function(){
 		progressive: true
 	}))
 	.pipe(gulp.dest('./docs/assets/images'));
+});
+
+gulp.task('moveIcons',['deleteDocsFolder'], function () {
+	return gulp.src('./app/assets/images/icons/*.svg')
+	.pipe(gulp.dest('./docs/assets/images/icons'));
 });
 
 gulp.task('moveJsFiles',['optimizeImages'], function(){
@@ -52,4 +52,4 @@ gulp.task('usemin', ['styles', 'scripts'], function(){
 });
 
 
-gulp.task('build', ['deleteDocsFolder', 'optimizeImages', 'usemin']);
+gulp.task('build', ['deleteDocsFolder', 'optimizeImages', 'moveIcons', 'usemin']);
