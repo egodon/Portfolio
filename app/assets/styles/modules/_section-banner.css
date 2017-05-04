@@ -1,6 +1,7 @@
 .section-banner {
   height: 100rem;
-
+  background: $almostWhite;
+  z-index: 0;
 
   @mixin atLarge {
     height: 100vh;
@@ -9,12 +10,20 @@
     background-position: center 80%;
   }
 
+  canvas {
+    position: absolute;
+    top: 0;
+    user-select: none;
+    z-index: 1;
+
+  }
+
   &--center {
     padding: 0rem 7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 5;
+    z-index: 10;
 
       @mixin atLarge {
         margin-top: 0;
@@ -71,17 +80,27 @@
 
 
     li {
-      margin: 0 .1rem;
       color: $darkGray;
       transition: color .2s;
+      z-index: 5;
 
       &:hover {
         color: $accentColour;
         cursor: pointer;
       }
 
+      img {
+        transform: scale(2);
+        
+
+        @mixin atLarge{
+          transform: none;
+        }
+      }
+
       @mixin atLarge {
         color: $almostWhite;
+
       }
     }
   }

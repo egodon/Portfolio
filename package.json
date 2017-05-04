@@ -6,7 +6,8 @@
   "dependencies": {
     "browsersync": "^0.0.1-security",
     "gulp": "^3.9.1",
-    "gulp-watch": "^4.3.11"
+    "gulp-watch": "^4.3.11",
+    "particles.js": "^2.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.5",
@@ -15,6 +16,7 @@
     "babel-preset-es2015": "^6.18.0",
     "browser-sync": "^2.18.5",
     "del": "^2.2.2",
+    "exports-loader": "^0.6.4",
     "gulp-cssnano": "^2.1.2",
     "gulp-imagemin": "^3.1.1",
     "gulp-postcss": "^6.3.0",
@@ -31,8 +33,8 @@
     "webpack": "^1.14.0"
   },
   "scripts": {
-        "test": "karma start",
-        "start": "node server.js"
+    "test": "karma start",
+    "start": "node server.js"
   },
   "author": "Evan Godon",
   "license": "ISC"

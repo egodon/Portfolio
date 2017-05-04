@@ -1,5 +1,5 @@
 .section-about {
-  height: 106rem;
+  height: 40rem;
   background: $almostWhite;
 
 
@@ -16,7 +16,10 @@
   }
 
   p {
-    width: 40rem;
     font-size: 1.125rem;
+
+    @mixin atLarge {
+      width: 42rem;
+    }
   }
 }

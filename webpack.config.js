@@ -13,7 +13,11 @@ module.exports = {
 				},
 				test: /\.js$/,
 				exclude: /node_modules/
-			}
+			},
+			 {
+      test: /particles\.js/,
+      loader: 'exports?particlesJS=window.particlesJS,pJSDom=window.pJSDom'
+    }
 		]
 	}
 }

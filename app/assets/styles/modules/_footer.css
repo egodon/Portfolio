@@ -2,7 +2,7 @@ footer {
 
 
   @mixin atLarge {
-    height: 10rem;
+    height: 2rem;
   }
 
 
