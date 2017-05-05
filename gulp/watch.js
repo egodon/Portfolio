@@ -27,6 +27,10 @@ gulp.task('watch', function(){
 			gulp.start('scriptsRefresh');
 		});
 
+		watch('./app/assets//*.json', function(){
+			gulp.start('scriptsRefresh');
+		});
+
 
 });
 

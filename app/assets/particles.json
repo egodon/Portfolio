@@ -15,7 +15,7 @@
       "stroke": {
         "width": 0,
         "color": "#ffffff",
-        "opacity": 1
+        "opacity": 0.5
       },
       "polygon": {
         "nb_sides": 5
@@ -31,7 +31,7 @@
       "random": false,
       "min": 0.25,
       "anim": {
-        "enable": false,
+        "enable": true,
         "speed": 1,
         "opacity_min": 0.1,
         "sync": false
@@ -56,10 +56,10 @@
     },
     "move": {
       "enable": true,
-      "speed": 3,
+      "speed": 2,
       "direction": "none",
       "random": true,
-      "min_speed":3,
+      "min_speed":2,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
@@ -75,7 +75,7 @@
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "bubble"
       },
       "onclick": {
         "enable": false,
