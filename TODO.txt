@@ -1,5 +1,7 @@
 
-FIX ABOUT AND CONTACT SECTIONS ON SMALLER SCREENS
+-Continue finding the right Colours
+-Design a better card for projects html 5 solid states
+-Edit About Me paragraph
 
 -steal Affinity menu animation
 

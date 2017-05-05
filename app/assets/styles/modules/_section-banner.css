@@ -14,7 +14,10 @@
     position: absolute;
     top: 0;
     user-select: none;
-    z-index: 1;
+    z-index: 4;
+    background-color: $almostWhite;
+    opacity: 1;
+
 
     /*FILL with background color*/
   }
@@ -36,7 +39,7 @@
   .logo {
     width: 200px;
     height: 200px;
-    z-index: 7;
+    z-index: 5;
   }
 
 
@@ -46,10 +49,11 @@
     font-weight: bold;
     font-size: 4.8rem;
     z-index: 7;
+    visibility: none;
 
     @mixin atLarge{
       font-size: 3.2rem;
-      color: $almostWhite;
+      color: $darkGray;
       letter-spacing: 4px;
     }
   }
@@ -64,7 +68,7 @@
     @mixin atLarge {
       font-size: 1.5rem;
       letter-spacing: 2px;
-      color: $almostWhite;
+      color: $darkGray;
       letter-spacing: 4px;
     }
   }

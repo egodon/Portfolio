@@ -1,17 +1,16 @@
 .section-skills {
-  height: 80rem;
+  background: #ef9a9a;
 
-  @mixin atLarge {
-    height: 35rem;
-    background: $almostWhite
-  }
+
 
   &--content {
-    padding: 3rem 7rem;
+    padding: 7rem 7rem;
 
     @mixin atLarge {
       display: flex;
       flex-direction: column;
+      align-items: center;
+
 
     }
 
@@ -19,6 +18,8 @@
     ul {
       padding-top: 3rem;
       color: $darkGray;
+      width: 35rem;
+      text-align: center;
 
 
     }
@@ -26,7 +27,7 @@
     li {
       display: inline-block;
       padding: 2px 10px;
-      margin-right: 20px;
+      margin: 10px 20px;
       border: 2px solid $darkGray;
 
     }

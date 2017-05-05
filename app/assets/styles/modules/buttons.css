@@ -1,0 +1,40 @@
+
+.btn-project {
+  border: 2px solid $almostBlack;
+  width: 200px;
+  transition: all .2s;
+  margin: 2rem 0;
+
+  &:hover {
+    background:$almostBlack;
+    color: $almostWhite;
+  }
+
+    @mixin atLarge {
+      font-size: 1rem;
+      margin: 2rem 1rem;
+
+    }
+  }
+
+  .btn-github {
+    border: 2px solid $accentColour;
+
+      &:hover {
+      background: $accentColour;
+      color: $almostWhite;
+    }
+
+
+}
+.btn-contact{
+    border: 2px solid $accentColour;
+    width: 200px;
+    transition: all .2s;
+    margin: 3rem 0;
+  
+    &:hover {
+      background:$accentColour;
+      color: $almostWhite;
+    }
+}
