@@ -96,16 +96,28 @@ p, button, li, h4 {
     color: #eef2f3;
   
 }
-.btn-contact{
-    border: 2px solid #ef5350;
-    width: 200px;
+.btn-form-send{
+    border: 4px solid #4d4d4d;
+    width: 100%;
+    height: 10rem;
     -webkit-transition: all .2s;
     transition: all .2s;
-    margin: 3rem 0;
+    margin: 5rem 0;
+    font-size: fontSizeSmall;
 }
-.btn-contact:hover {
-    background:#ef5350;
-    color: #eef2f3;
+.btn-form-send:hover {
+    border: 2px solid #ef5350;
+  
+}
+@media (min-width: 1010px) {
+    .btn-form-send {
+        width: 10rem;
+        height: 3rem;
+        font-size: 1.125rem;
+        border: 2px solid #4d4d4d;
+        margin: 3rem 0;
+  
+    }
   
 }
 .nav-button {
@@ -279,14 +291,16 @@ p, button, li, h4 {
 @media (min-width: 1010px) {
     .section-banner {
         height: 100vh;
-        background-image: url('../../assets/images/overlay.png'), url('../../assets/images/banner.jpg');
+        /*background-image: url('../../assets/images/overlay.png'), url('../../assets/images/banner.jpg');*/
         background-size: cover;
         background-position: center 80%;
+        background-color: #eef2f3;
   
     }
   
 }
 .section-banner canvas {
+    display: none;
     position: absolute;
     top: 0;
     -webkit-user-select: none;
@@ -294,13 +308,18 @@ p, button, li, h4 {
         -ms-user-select: none;
             user-select: none;
     z-index: 4;
-    background-color: #eef2f3;
     opacity: 1;
-    /*FILL with background color*/
+  
+}
+@media (min-width: 1010px) {
+    .section-banner canvas {
+        display: block;
+  
+    }
   
 }
 .section-banner--center {
-    padding: 0rem 7rem;
+    padding: 0 7rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -349,7 +368,7 @@ p, button, li, h4 {
     color: #4d4d4d;
     font-size: 2.6rem;
     margin-top: 1rem;
-    font-weight: 100;
+    font-weight: bold;
     z-index: 7;
   
 }
@@ -392,13 +411,14 @@ p, button, li, h4 {
   
 }
 .section-banner ul li img {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    -webkit-transform: scale(3);
+            transform: scale(3);
     z-index: 7;
     -webkit-transition: -webkit-transform .2s;
     transition: -webkit-transform .2s;
     transition: transform .2s;
     transition: transform .2s, -webkit-transform .2s;
+    margin: 5rem 4rem;
   
 }
 .section-banner ul li img:hover {
@@ -410,6 +430,7 @@ p, button, li, h4 {
     .section-banner ul li img {
         -webkit-transform: none;
                 transform: none;
+        margin: 0;
   
     }
   
@@ -438,16 +459,9 @@ p, button, li, h4 {
   
 }
 .section-about {
-  height: 40rem;
   background: #eef2f3;
 }
-@media (min-width: 1010px) {
-    .section-about {
-        height: 25rem;
-  
-    }
-  
-}
+@media (min-width: 1010px) {}
 .section-about--content{
     padding: 3rem 7rem;
     display: -webkit-box;
@@ -462,17 +476,52 @@ p, button, li, h4 {
             align-items: center;
   
 }
+.section-about .about-container {
+    margin-bottom: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  
+}
+@media (min-width: 1010px) {
+    .section-about .about-container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        width: 55rem;
+  
+    }
+  
+}
 .section-about p {
-    font-size: 1.125rem;
+    font-size: fontSizeSmall;
     letter-spacing: 1px;
-    line-height: 1.5rem;
+    line-height: 3rem;
   
 }
 @media (min-width: 1010px) {
     .section-about p {
-        width: 42rem;
+        font-size: fontSizeLarge;
+        line-height: 1.5rem;
+        font-size: 1.125rem;
   
     }
+  
+}
+.section-about img{
+    width: 319px;
+    height: 330.6px;
+    margin: 2rem 2rem;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
   
 }
 .section-skills {
@@ -612,6 +661,9 @@ p, button, li, h4 {
     }
   
 }
+.section-contact {
+  background: #bdbdbd;
+}
 @media (min-width: 1010px) {}
 .section-contact--content {
     padding: 3rem 7rem;
@@ -664,30 +716,6 @@ p, button, li, h4 {
     }
   
 }
-.section-contact--content label:first-child{
-    margin-top: 2rem;
-  
-}
-.section-contact--content label {
-    font-size: 2.4rem;
-    margin-bottom: 0.5rem;
-    color: #4d4d4d;
-  
-}
-@media (min-width: 1010px) {
-    .section-contact--content label {
-        font-size: 1.4rem;
-  
-    }
-  
-}
-@media (min-width: 2100px) {
-    .section-contact--content label {
-        font-size: 1.2rem;
-  
-    }
-  
-}
 .section-contact--content input {
     margin-bottom: 3rem;
     height: 1.3rem;
@@ -696,6 +724,7 @@ p, button, li, h4 {
 @media (min-width: 1010px) {
     .section-contact--content input {
         height: .7rem;
+        font-size: 1.125rem;
   
     }
   
@@ -703,21 +732,30 @@ p, button, li, h4 {
 .section-contact--content textarea {
     resize: none;
     overflow: hidden;
-    min-height: 3rem;
+    min-height: 10rem;
   
 }
-@media (min-width: 1010px) {}
+@media (min-width: 1010px) {
+    .section-contact--content textarea {
+        min-height: 3rem;
+  
+    }
+  
+}
 .section-contact--content input, .section-contact--content textarea {
-    font-size: 2.4rem;
-    padding: 10px 20px 15px 0;
+    font-size: 3rem;
+    padding: 10px 20px 35px 0;
     border: none;
     border-bottom: solid 2px #4d4d4d;
+    border-radius: 0;
     background: transparent;
+    box-shadow: none;
   
 }
 @media (min-width: 1010px) {
     .section-contact--content input, .section-contact--content textarea {
         font-size: 1.125rem;
+        padding: 10px 20px 25px 0;
   
     }
   
@@ -729,19 +767,42 @@ p, button, li, h4 {
   
 }
 .section-contact--content ::-webkit-input-placeholder {
-    font-size: 1.125rem;
+    font-size: 3rem;
+    color: #4d4d4d;
   
 }
 .section-contact--content ::-moz-placeholder {
-    font-size: 1.125rem;
+    font-size: 3rem;
+    color: #4d4d4d;
   
 }
 .section-contact--content :-ms-input-placeholder {
-    font-size: 1.125rem;
+    font-size: 3rem;
+    color: #4d4d4d;
   
 }
 .section-contact--content ::placeholder {
-    font-size: 1.125rem;
+    font-size: 3rem;
+    color: #4d4d4d;
+  
+}
+@media (min-width: 1010px) {
+    .section-contact--content ::-webkit-input-placeholder {
+        font-size: 1.125rem;
+  
+    }
+    .section-contact--content ::-moz-placeholder {
+        font-size: 1.125rem;
+  
+    }
+    .section-contact--content :-ms-input-placeholder {
+        font-size: 1.125rem;
+  
+    }
+    .section-contact--content ::placeholder {
+        font-size: 1.125rem;
+  
+    }
   
 }
 @media (min-width: 1010px) {

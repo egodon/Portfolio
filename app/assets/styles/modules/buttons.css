@@ -27,14 +27,24 @@
 
 
 }
-.btn-contact{
-    border: 2px solid $accentColour;
-    width: 200px;
+.btn-form-send{
+    border: 4px solid $darkGray;
+    width: 100%;
+    height: 10rem;
     transition: all .2s;
-    margin: 3rem 0;
-  
+    margin: 5rem 0;
+    font-size: fontSizeSmall;
+
     &:hover {
-      background:$accentColour;
-      color: $almostWhite;
+      border: 2px solid $accentColour;
+
+    }
+
+    @mixin atLarge {
+      width: 10rem;
+      height: 3rem;
+      font-size: $fontSizeLarge;
+      border: 2px solid $darkGray;
+      margin: 3rem 0;
     }
 }

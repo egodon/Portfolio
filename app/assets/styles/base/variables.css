@@ -4,6 +4,9 @@ $almostWhite: #eef2f3;
 $lightGray: #bdbdbd;
 $darkGray: #4d4d4d;
 $accentColour: #ef5350;
+$lightRed: #ef9a9a;
 $almostBlack: #222222;
 
 /*Font-sizes*/
+$fontSizeSmall: 3rem;
+$fontSizeLarge: 1.125rem;

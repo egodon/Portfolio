@@ -1,9 +1,11 @@
 
--Continue finding the right Colours
--Design a better card for projects html 5 solid states
--Edit About Me paragraph
+1. Finish new card design
 
--steal Affinity menu animation
+2. Finish Skills section
+
+3. Develop the desktop navigation bar
+
+
 
 BUGS:
 -Fix nav menu btn when scroll up

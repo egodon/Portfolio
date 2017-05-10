@@ -75,7 +75,7 @@
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "none"
       },
       "onclick": {
         "enable": false,

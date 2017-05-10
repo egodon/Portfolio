@@ -20,9 +20,6 @@ gulp.task('deleteDocsFolder', function(){
 	return del("./docs");
 });
 
-gulp.task('useminTrigger', ['deleteDocsFolder'], function(){
-	gulp.start('usemin');
-});
 
 gulp.task('optimizeImages',['deleteDocsFolder'], function(){
 	return gulp.src('./app/assets/images/*')
@@ -42,10 +39,6 @@ gulp.task('moveParticleJSON',['deleteDocsFolder'], function () {
 	.pipe(gulp.dest('./docs/assets/'));
 });
 
-gulp.task('moveJsFiles',['optimizeImages'], function(){
-	gulp.src('./app/temp/scripts/App.js')
-	.pipe(gulp.dest('./docs/assets/scripts'));
-});
 
 gulp.task('usemin', ['styles', 'scripts'], function(){
 	return gulp.src('./app/index.html')
