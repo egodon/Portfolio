@@ -1,5 +1,5 @@
 .section-about {
-  background: $almostWhite;
+  background: $veryLightGray;
 
 
   @mixin atLarge {

@@ -58,10 +58,9 @@
 
 	var navBtn = new _NavBtn2.default();
 
-	//Particles.js
-
+	// Particles.js
 	_particles2.default.particlesJS.load('particles-js', 'assets/particles.json', function () {
-	  console.log('callback - particles.js config loaded');
+	  console.log('particles.js config loaded');
 	});
 
 /***/ },

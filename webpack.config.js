@@ -1,8 +1,8 @@
 module.exports = {
-	entry: "./app/assets/scripts/App.js",
+	entry: "./app/assets/scripts/app.js",
 	output: {
 		path: "./app/temp/scripts",
-		filename: "App.js"
+		filename: "app.js"
 	},
 	module: {
 		loaders: [
@@ -15,9 +15,9 @@ module.exports = {
 				exclude: /node_modules/
 			},
 			 {
-      test: /particles\.js/,
-      loader: 'exports?particlesJS=window.particlesJS,pJSDom=window.pJSDom'
-    }
+      			test: /particles\.js/,
+      			loader: 'exports?particlesJS=window.particlesJS,pJSDom=window.pJSDom'
+			 }
 		]
 	}
 }

@@ -1,76 +1,30 @@
 .section-projects {
+  background: $lightGray;
 
-  &--content {
-    padding: 3rem 7rem;
+  &--content{
+    padding: 1rem 0;
 
-    @mixin atLarge {
+    @mixin atLarge{
+      padding: 3rem 7rem;
+    }
+
+
+
+    .card{
+      margin: 2.5rem 2rem;
+    }
+
+    .card-action{
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-  }
+      justify-content: center;
 
-  &--project-title {
-    font-size: 2.4rem;
-    margin-bottom: 2rem;
-
-    @mixin atLarge {
-      font-size: 1.4rem;
-      margin-top: 0;
-    }
-  }
-
-  &--article {
-    padding: 5rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @mixin atMedium {
-      width: 20rem;
-      border-radius: 5px;
-      background: $almostWhite;
-    }
-
-    @mixin atLarge {
-      width: 25rem;
-      padding: 2rem;
-      margin: 2rem 0.2rem;
-      box-shadow: 0 0.0375em 0.125em 0 rgba(0,0,0,.15);
-
-    }
-
-    @mixin atXLarge{
-      width: 35rem;
-    }
-
-
-    img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 10px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
-      @mixin atLarge {
-        width: 25rem;
-        height: 17rem;
-        box-shadow: none;
+      a{
+        margin: 0 1rem;
       }
 
 
     }
 
-    p {
-      margin: 3rem 1rem;;
-      font-size: 1.125rem;
-
-      @mixin atLarge {
-        max-width: 30rem;
-        margin: 2rem 0;
-        font-size: 1.125rem;
-      }
-
-    }
 
   }
-
 }

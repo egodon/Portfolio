@@ -1,6 +1,6 @@
 .section-banner {
   height: 100rem;
-  background: $almostWhite;
+  background: $veryLightGray;
   z-index: 0;
 
   @mixin atLarge {
@@ -8,7 +8,7 @@
     /*background-image: url('../../assets/images/overlay.png'), url('../../assets/images/banner.jpg');*/
     background-size: cover;
     background-position: center 80%;
-    background-color: $almostWhite;
+
   }
 
   canvas {
@@ -21,6 +21,7 @@
 
     @mixin atLarge {
       display: block;
+      background:;
     }
   }
 

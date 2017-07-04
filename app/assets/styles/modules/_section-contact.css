@@ -1,5 +1,5 @@
 .section-contact {
-  background: $lightGray;
+  background: $contact-background;
 
   @mixin atLarge {
 
@@ -20,7 +20,8 @@
         display: flex;
         justify-content:center;
         flex-direction: column;
-        background: $lightGray;
+        background: $contact-background;
+
 
 
         @mixin atLarge {
@@ -28,6 +29,7 @@
           padding: 2rem;
           width: 40rem;
           height: 25rem;
+          background: $lightGray;
         }
         @mixin atXLarge {
           width: 44rem;
@@ -79,7 +81,8 @@
       }
 
       ::placeholder {
-        font-size: 3rem;
+        font-size: 2rem;
+
 
         color: $darkGray;
 

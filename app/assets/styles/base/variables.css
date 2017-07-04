@@ -1,12 +1,14 @@
 
 /*Colours*/
-$almostWhite: #eef2f3;
-$lightGray: #bdbdbd;
+$almostWhite: #ffffff;
+$veryLightGray: #eef2f3;
+$lightGray: #E0E0E0;
 $darkGray: #4d4d4d;
 $accentColour: #ef5350;
 $lightRed: #ef9a9a;
 $almostBlack: #222222;
+$contact-background: #F48989;
 
 /*Font-sizes*/
-$fontSizeSmall: 3rem;
+$fontSizeSmall: 2rem;
 $fontSizeLarge: 1.125rem;

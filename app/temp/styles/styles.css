@@ -5,15 +5,16 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-  
+    font-size: 16px;
+
 }
 body ::-moz-selection {
     background: #ef5350;
-  
+
 }
 body ::selection {
     background: #ef5350;
-  
+
 }
 .no-scroll {
   overflow: hidden;
@@ -47,9 +48,9 @@ p, button, li, h4 {
 @media (min-width: 1010px) {
     p, button, li, h4 {
         font-size: 1.25rem;
-  
+
     }
-  
+
 }
 .section-title {
   margin: 3rem 0;
@@ -62,40 +63,53 @@ p, button, li, h4 {
         font-size: 1.75rem;
         margin: 1rem 0;
         width: 100%;
-  
+
     }
-  
+
 }
+/*BUTTONS FOR PROJECT SECTION*/
 .btn-project {
   border: 2px solid #222222;
-  width: 200px;
+  width: 16rem;
+  height: 5rem;
   -webkit-transition: all .2s;
   transition: all .2s;
-  margin: 2rem 0;
+  margin: 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
   }
 .btn-project:hover {
     background:#222222;
-    color: #eef2f3;
-  
+    color: #ffffff;
+
 }
 @media (min-width: 1010px) {
     .btn-project {
         font-size: 1rem;
         margin: 2rem 1rem;
-  
+        width: 8rem;
+        height: 2rem;
+
     }
-  
+
 }
 .btn-github {
     border: 2px solid #ef5350;
-
-
 }
 .btn-github:hover {
     background: #ef5350;
-    color: #eef2f3;
-  
+    color: #ffffff;
+
 }
+/*BUTTON FOR CONTACT FORM*/
 .btn-form-send{
     border: 4px solid #4d4d4d;
     width: 100%;
@@ -107,7 +121,7 @@ p, button, li, h4 {
 }
 .btn-form-send:hover {
     border: 2px solid #ef5350;
-  
+
 }
 @media (min-width: 1010px) {
     .btn-form-send {
@@ -116,9 +130,9 @@ p, button, li, h4 {
         font-size: 1.125rem;
         border: 2px solid #4d4d4d;
         margin: 3rem 0;
-  
+
     }
-  
+
 }
 .nav-button {
   background: #4d4d4d;
@@ -144,9 +158,9 @@ p, button, li, h4 {
 @media (min-width: 1010px) {
     .nav-button {
         display: none;
-  
+
     }
-  
+
 }
 .nav-button::before {
     content: " ";
@@ -155,14 +169,14 @@ p, button, li, h4 {
     left: 35px;
     width: 50px;
     height: 5px;
-    background-color: #eef2f3;
+    background-color: #ffffff;
     -webkit-transform-origin: 0 0;
             transform-origin: 0 0;
     -webkit-transition: -webkit-transform 0.3s ease-out;
     transition: -webkit-transform 0.3s ease-out;
     transition: transform 0.3s ease-out;
     transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  
+
 }
 .nav-button__bar {
     position: absolute;
@@ -171,17 +185,17 @@ p, button, li, h4 {
     width: 50px;
     height: 5px;
     max-width: 50px;
-    background-color: #eef2f3;
+    background-color: #ffffff;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     -webkit-transform-origin: 0 50%;
             transform-origin: 0 50%;
-  
+
 }
 .nav-button__bar--is-active {
     -webkit-transform: scale(0.15);
             transform: scale(0.15);
-  
+
 }
 .nav-button::after {
     content: "";
@@ -190,40 +204,40 @@ p, button, li, h4 {
     left: 35px;
     width: 50px;
     height: 5px;
-    background-color: #eef2f3;
+    background-color: #ffffff;
     -webkit-transform-origin: 0 100%;
             transform-origin: 0 100%;
     -webkit-transition: -webkit-transform 0.3s ease-out;
     transition: -webkit-transform 0.3s ease-out;
     transition: transform 0.3s ease-out;
     transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  
+
 }
 .nav-button--is-hidden {
     -webkit-transform: scale(0);
             transform: scale(0);
-  
+
 }
 /*CLOSE MENU BUTTON*/
 .nav-button--close-x {
     box-shadow: none;
-  
+
 }
 .nav-button--close-x::before{
     -webkit-transform: rotate(45deg) scaleX(1.25);
             transform: rotate(45deg) scaleX(1.25);
-  
+
 }
 .nav-button--close-x .nav-button__bar{
     opacity: 0;
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
-  
+
 }
 .nav-button--close-x::after {
     -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
             transform: rotate(-45deg) scaleX(1.25) translateY(1px);
-  
+
 }
 .nav-button__expanded{
     background: #4d4d4d;
@@ -240,47 +254,47 @@ p, button, li, h4 {
     opacity: 0.5;
     -webkit-transform: scale(0);
             transform: scale(0);
-  
+
 }
 .nav-button__expanded ul{
     position: absolute;
     padding: 60px;
     left: 300px;
     top: 190px;
-  
+
 }
 .nav-button__expanded li{
     text-align: center;
     font-size: 3.5rem;
-    color: #eef2f3;
-    border: 3px solid #eef2f3;
+    color: #ffffff;
+    border: 3px solid #ffffff;
     border-radius: 5px;
     margin-top: 30px;
     padding: 15px 30px;
     position:relative;
-  
+
 }
 .nav-button__expanded li.nav-item-1 {
     left: 75px;
-  
+
 }
 .nav-button__expanded li.nav-item-2 {
     left: 0px;
-  
+
 }
 .nav-button__expanded li.nav-item-3 {
     right: 75px;
-  
+
 }
 .nav-button__expanded li.nav-item-4 {
     right: 150px;
-  
+
 }
 .nav-button__expanded--is-active {
     -webkit-transform: scale(1);
             transform: scale(1);
     opacity: 1;
-  
+
 }
 .section-banner {
   height: 100rem;
@@ -294,10 +308,9 @@ p, button, li, h4 {
         /*background-image: url('../../assets/images/overlay.png'), url('../../assets/images/banner.jpg');*/
         background-size: cover;
         background-position: center 80%;
-        background-color: #eef2f3;
-  
+
     }
-  
+
 }
 .section-banner canvas {
     display: none;
@@ -309,14 +322,15 @@ p, button, li, h4 {
             user-select: none;
     z-index: 4;
     opacity: 1;
-  
+
 }
 @media (min-width: 1010px) {
     .section-banner canvas {
         display: block;
-  
+        background: ;
+
     }
-  
+
 }
 .section-banner--center {
     padding: 0 7rem;
@@ -331,21 +345,21 @@ p, button, li, h4 {
         -ms-flex-align: center;
             align-items: center;
     z-index: 7;
-  
+
 }
 @media (min-width: 1010px) {
     .section-banner--center {
         margin-top: 0;
         padding: 6rem 7rem;
-  
+
     }
-  
+
 }
 .section-banner .logo {
     width: 200px;
     height: 200px;
     z-index: 5;
-  
+
 }
 .section-banner h1 {
     color: #4d4d4d;
@@ -353,16 +367,16 @@ p, button, li, h4 {
     font-size: 4.8rem;
     z-index: 7;
     visibility: none;
-  
+
 }
 @media (min-width: 1010px) {
     .section-banner h1 {
         font-size: 3.2rem;
         color: #4d4d4d;
         letter-spacing: 4px;
-  
+
     }
-  
+
 }
 .section-banner h2 {
     color: #4d4d4d;
@@ -370,7 +384,7 @@ p, button, li, h4 {
     margin-top: 1rem;
     font-weight: bold;
     z-index: 7;
-  
+
 }
 @media (min-width: 1010px) {
     .section-banner h2 {
@@ -378,15 +392,15 @@ p, button, li, h4 {
         letter-spacing: 2px;
         color: #4d4d4d;
         letter-spacing: 4px;
-  
+
     }
-  
+
 }
 .section-banner p {
     font-size: 2.4rem;
-    color: #eef2f3;
+    color: #ffffff;
     width: 650px;
-  
+
 }
 .section-banner ul {
     margin-top: 2rem;
@@ -396,19 +410,19 @@ p, button, li, h4 {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-  
+
 }
 .section-banner ul li {
     color: #4d4d4d;
     -webkit-transition: color .2s;
     transition: color .2s;
     z-index: 5;
-  
+
 }
 .section-banner ul li:hover {
     color: #ef5350;
     cursor: pointer;
-  
+
 }
 .section-banner ul li img {
     -webkit-transform: scale(3);
@@ -419,28 +433,28 @@ p, button, li, h4 {
     transition: transform .2s;
     transition: transform .2s, -webkit-transform .2s;
     margin: 5rem 4rem;
-  
+
 }
 .section-banner ul li img:hover {
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
-  
+
 }
 @media (min-width: 1010px) {
     .section-banner ul li img {
         -webkit-transform: none;
                 transform: none;
         margin: 0;
-  
+
     }
-  
+
 }
 @media (min-width: 1010px) {
     .section-banner ul li {
-        color: #eef2f3;
-  
+        color: #ffffff;
+
     }
-  
+
 }
 .section-banner--button{
     width: 100%;
@@ -448,7 +462,7 @@ p, button, li, h4 {
     bottom: 100px;
     text-align: center;
     padding-bottom: 1rem;
-  
+
 }
 .section-banner--button button {
     border: 1px solid white;
@@ -456,7 +470,7 @@ p, button, li, h4 {
     width: 100px;
     height: 100px;
     display: none;
-  
+
 }
 .section-about {
   background: #eef2f3;
@@ -474,7 +488,7 @@ p, button, li, h4 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  
+
 }
 .section-about .about-container {
     margin-bottom: 4rem;
@@ -488,7 +502,7 @@ p, button, li, h4 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  
+
 }
 @media (min-width: 1010px) {
     .section-about .about-container {
@@ -497,24 +511,24 @@ p, button, li, h4 {
             -ms-flex-direction: row;
                 flex-direction: row;
         width: 55rem;
-  
+
     }
-  
+
 }
 .section-about p {
     font-size: fontSizeSmall;
     letter-spacing: 1px;
     line-height: 3rem;
-  
+
 }
 @media (min-width: 1010px) {
     .section-about p {
         font-size: fontSizeLarge;
         line-height: 1.5rem;
         font-size: 1.125rem;
-  
+
     }
-  
+
 }
 .section-about img{
     width: 319px;
@@ -522,7 +536,7 @@ p, button, li, h4 {
     margin: 2rem 2rem;
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
-  
+
 }
 .section-skills {
   background: #ef9a9a;
@@ -530,7 +544,7 @@ p, button, li, h4 {
 }
 .section-skills--content {
     padding: 7rem 7rem;
-  
+
 }
 @media (min-width: 1010px) {
     .section-skills--content {
@@ -544,130 +558,62 @@ p, button, li, h4 {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-  
+
     }
-  
+
 }
 .section-skills--content ul {
     padding-top: 3rem;
     color: #4d4d4d;
     width: 35rem;
     text-align: center;
-  
+
 }
 .section-skills--content li {
     display: inline-block;
     padding: 2px 10px;
     margin: 10px 20px;
     border: 2px solid #4d4d4d;
-  
+
 }
-.section-projects--content {
-    padding: 3rem 7rem;
-  
+.section-projects {
+  background: #E0E0E0;
+}
+.section-projects--content{
+    padding: 1rem 0;
+
 }
 @media (min-width: 1010px) {
     .section-projects--content {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-  
+        padding: 3rem 7rem;
+
     }
-  
+
 }
-.section-projects--project-title {
-    font-size: 2.4rem;
-    margin-bottom: 2rem;
-  
+.section-projects--content .card{
+    margin: 2.5rem 2rem;
+
 }
-@media (min-width: 1010px) {
-    .section-projects--project-title {
-        font-size: 1.4rem;
-        margin-top: 0;
-  
-    }
-  
-}
-.section-projects--article {
-    padding: 5rem 0;
+.section-projects--content .card-action{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
 }
-@media (min-width: 800px) {
-    .section-projects--article {
-        width: 20rem;
-        border-radius: 5px;
-        background: #eef2f3;
-  
-    }
-  
-}
-@media (min-width: 1010px) {
-    .section-projects--article {
-        width: 25rem;
-        padding: 2rem;
-        margin: 2rem 0.2rem;
-        box-shadow: 0 0.0375em 0.125em 0 rgba(0,0,0,.15);
-  
-    }
-  
-}
-@media (min-width: 2100px) {
-    .section-projects--article {
-        width: 35rem;
-  
-    }
-  
-}
-.section-projects--article img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  
-}
-@media (min-width: 1010px) {
-    .section-projects--article img {
-        width: 25rem;
-        height: 17rem;
-        box-shadow: none;
-  
-    }
-  
-}
-.section-projects--article p {
-    margin: 3rem 1rem;
-    font-size: 1.125rem;
-  
-}
-@media (min-width: 1010px) {
-    .section-projects--article p {
-        max-width: 30rem;
-        margin: 2rem 0;
-        font-size: 1.125rem;
-  
-    }
-  
+.section-projects--content .card-action a{
+    margin: 0 1rem;
+
 }
 .section-contact {
-  background: #bdbdbd;
+  background: #F48989;
 }
 @media (min-width: 1010px) {}
 .section-contact--content {
     padding: 3rem 7rem;
-  
+
 }
 @media (min-width: 1010px) {
     .section-contact--content {
@@ -681,9 +627,9 @@ p, button, li, h4 {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-  
+
     }
-  
+
 }
 .section-contact--content form {
     display: -webkit-box;
@@ -696,8 +642,8 @@ p, button, li, h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: #bdbdbd;
-  
+    background: #F48989;
+
 }
 @media (min-width: 1010px) {
     .section-contact--content form {
@@ -705,124 +651,128 @@ p, button, li, h4 {
         padding: 2rem;
         width: 40rem;
         height: 25rem;
-  
+        background: #E0E0E0;
+
     }
-  
+
 }
 @media (min-width: 2100px) {
     .section-contact--content form {
         width: 44rem;
-  
+
     }
-  
+
 }
 .section-contact--content input {
     margin-bottom: 3rem;
     height: 1.3rem;
-  
+
 }
 @media (min-width: 1010px) {
     .section-contact--content input {
         height: .7rem;
         font-size: 1.125rem;
-  
+
     }
-  
+
 }
 .section-contact--content textarea {
     resize: none;
     overflow: hidden;
     min-height: 10rem;
-  
+
 }
 @media (min-width: 1010px) {
     .section-contact--content textarea {
         min-height: 3rem;
-  
+
     }
-  
+
 }
 .section-contact--content input, .section-contact--content textarea {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 10px 20px 35px 0;
     border: none;
     border-bottom: solid 2px #4d4d4d;
     border-radius: 0;
     background: transparent;
     box-shadow: none;
-  
+
 }
 @media (min-width: 1010px) {
     .section-contact--content input, .section-contact--content textarea {
         font-size: 1.125rem;
         padding: 10px 20px 25px 0;
-  
+
     }
-  
+
 }
 .section-contact--content input:focus, .section-contact--content textarea:focus {
     outline: none;
     border-bottom-color: #ef5350;
     box-shadow: inset 0 -1px 0 0 #ef5350;
-  
+
 }
 .section-contact--content ::-webkit-input-placeholder {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #4d4d4d;
-  
+
 }
 .section-contact--content ::-moz-placeholder {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #4d4d4d;
-  
+
 }
 .section-contact--content :-ms-input-placeholder {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #4d4d4d;
-  
+
 }
 .section-contact--content ::placeholder {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #4d4d4d;
-  
+
 }
 @media (min-width: 1010px) {
     .section-contact--content ::-webkit-input-placeholder {
         font-size: 1.125rem;
-  
+
     }
     .section-contact--content ::-moz-placeholder {
         font-size: 1.125rem;
-  
+
     }
     .section-contact--content :-ms-input-placeholder {
         font-size: 1.125rem;
-  
+
     }
     .section-contact--content ::placeholder {
         font-size: 1.125rem;
-  
+
     }
-  
+
+}
+footer {
+  background: #eef2f3;
+  padding: 1rem;
 }
 @media (min-width: 1010px) {
     footer {
-        height: 3rem;
-  
+        height: 2rem;
+
     }
-  
+
 }
 footer p{
     font-size: 2rem;
     text-align: center;
-    margin: 3rem 0;
     color: rgba(0, 0, 0, 0.3);
-  
+
 }
 @media (min-width: 1010px) {
     footer p {
         font-size: 1rem;
-  
+
     }
-  
+
 }

@@ -1,9 +1,8 @@
 
-1. Finish new card design
 
-2. Finish Skills section
+ Finish Skills section
 
-3. Develop the desktop navigation bar
+ Develop the desktop navigation bar
 
 
 
