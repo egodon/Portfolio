@@ -3,12 +3,16 @@
 
   &--content{
     padding: 1rem 0;
-
-    @mixin atLarge{
+    max-width: 1600px;
+    width: 90%;
+    @mixin atXLarge{
       padding: 3rem 7rem;
     }
 
 
+    div{
+      padding: 0 0;
+    }
 
     .card{
       margin: 2.5rem 2rem;
@@ -28,3 +32,5 @@
 
   }
 }
+
+

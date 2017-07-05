@@ -542,38 +542,41 @@ p, button, li, h4 {
   background: #ef9a9a;
 
 }
-.section-skills--content {
-    padding: 7rem 7rem;
+.section-skills--content{
+    padding: 1rem 0;
+    max-width: 1600px;
+    width: 90%;
 
 }
-@media (min-width: 1010px) {
+@media (min-width: 2100px) {
     .section-skills--content {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        padding: 3rem 7rem;
 
     }
 
 }
 .section-skills--content ul {
-    padding-top: 3rem;
+    margin-top: 3rem;
     color: #4d4d4d;
-    width: 35rem;
     text-align: center;
 
 }
-.section-skills--content li {
-    display: inline-block;
+.section-skills--content li, .section-skills--content h4 {
     padding: 2px 10px;
     margin: 10px 20px;
-    border: 2px solid #4d4d4d;
+
+}
+.section-skills--content .skills-divider {
+    border-bottom: 1px solid #4d4d4d;
+    margin: auto auto;
+    width: 95%;
+
+}
+@media (min-width: 1010px) {
+    .section-skills--content .skills-divider {
+        width: 85%;
+
+    }
 
 }
 .section-projects {
@@ -581,13 +584,19 @@ p, button, li, h4 {
 }
 .section-projects--content{
     padding: 1rem 0;
+    max-width: 1600px;
+    width: 90%;
 
 }
-@media (min-width: 1010px) {
+@media (min-width: 2100px) {
     .section-projects--content {
         padding: 3rem 7rem;
 
     }
+
+}
+.section-projects--content div{
+    padding: 0 0;
 
 }
 .section-projects--content .card{

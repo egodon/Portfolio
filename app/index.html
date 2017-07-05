@@ -2,12 +2,11 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
   <!-- build:css assets/styles/styles.css -->
   <link rel="stylesheet" href="temp/styles/styles.css">
   <!-- endbuild -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-  <title>Document</title>
+  <title>Evan Godon</title>
 </head>
 <body>
 <!-- SECTION BANNER -->
@@ -51,23 +50,49 @@
   <!-- SECTION SKILLS -->
 
 <div class="section-skills">
-    <div class="section-skills--content">
+    <div class="section-skills--content container">
         <h3 class="section-title">TECHNICAL SKILLS</h3>
-
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>PostCSS</li>
-            <li>SCSS</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>jQuery</li>
-            <li>ReactJS</li>
-            <li>NodeJS</li>
-            <li>Webpack</li>
-            <li>Gulp</li>
-            <li>Git</li>
-        </ul>
+        <div class="row">
+            <div class="skills-front-end col m12 xl3">
+                <ul>
+                    <h4>Front-End</h4>
+                    <div class="skills-divider"></div>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Pug</li>
+                </ul>
+            </div>
+            <div class="skills-back-end col m12 xl3">
+                <ul class="skills-back-end">
+                    <h4>Back-End</h4>
+                    <div class="skills-divider"></div>
+                    <li>NodeJS/Express</li>
+                    <li>Mongo</li>
+                    <li>Heroku</li>
+                </ul>
+            </div>
+            <div class="skills-frameworks col m12 xl3">
+                <ul>
+                    <h4>Frameworks/Libraries</h4>
+                    <div class="skills-divider"></div>
+                    <li>Sass</li>
+                    <li>Materialize</li>
+                    <li>Bootstrap</li>
+                    <li>JQuery</li>
+                </ul>
+            </div>
+            <div class="skills-build-tools col m12 xl3">
+                <ul>
+                    <h4>Build Tools</h4>
+                    <div class="skills-divider"></div>
+                    <li>Webpack</li>
+                    <li>Gulp</li>
+                    <li>NPM Scripts</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -76,11 +101,11 @@
     <div class="section-projects--content container">
         <h3 class="section-title">PROJECTS</h3>
         <div class="row">
-            <div class="col m12 l6">
-                <div class="card    ">
+            <div class="col m12 l6 xl4"> <!-- Project 1 -->
+                <div class="card">
                     <div class="card-image">
-                        <img src="assets/images/website1.jpg">
-                        <span class="card-title">Website 1</span>
+                        <img src="https://unsplash.it/300/200?random">
+                        <span class="card-title">Project 1</span>
                     </div>
                     <div class="card-content">
                         <p>I am a very simple card. I am good at containing small bits of information.
@@ -93,11 +118,11 @@
                 </div>
             </div>
 
-            <div class="col m12 l6">
+            <div class="col m12 l6 xl4"> <!-- Project 2 -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="assets/images/website1.jpg">
-                        <span class="card-title">Card Title</span>
+                        <img src="https://unsplash.it/300/200?random">
+                        <span class="card-title">Project 2</span>
                     </div>
                     <div class="card-content">
                         <p>I am a very simple card. I am good at containing small bits of information.
@@ -109,11 +134,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col m12 l6">
+            <div class="col m12 l6 xl4"> <!-- Project 3 -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="assets/images/website1.jpg">
-                        <span class="card-title">Card Title</span>
+                        <img src="https://unsplash.it/300/200?random">
+                        <span class="card-title">Project 3</span>
                     </div>
                     <div class="card-content">
                         <p>I am a very simple card. I am good at containing small bits of information.
@@ -125,11 +150,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col m12 l6">
+        </div>
+        <div class="row">
+            <div class="col m12 xl4"> <!-- Project 4 -->
                 <div class="card ">
                     <div class="card-image">
-                        <img src="assets/images/website1.jpg">
-                        <span class="card-title">Card Title</span>
+                        <img src="https://unsplash.it/300/200?random">
+                        <span class="card-title">Project 4</span>
                     </div>
                     <div class="card-content">
                         <p>I am a very simple card. I am good at containing small bits of information.
@@ -141,7 +168,39 @@
                     </div>
                 </div>
             </div>
-    </div>
+            <div class="col m12 l4"> <!-- Project 5 -->
+                <div class="card    ">
+                    <div class="card-image">
+                        <img src="https://unsplash.it/300/200?random">
+                        <span class="card-title">Project 5</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="waves-effect waves-light btn">Demo</a>
+                        <a class="waves-effect waves-light btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col m12 l6 xl4"> <!-- Project 6 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://unsplash.it/300/200?random">
+                        <span class="card-title">Project 6</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="waves-effect waves-light btn">Demo</a>
+                        <a class="waves-effect waves-light btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+    </div> <!-- End of container -->
 </div>
 
 

@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="assets/styles/styles-345a6de971.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/styles/styles-c2a9ace4a4.css"/>
+  <title>Evan Godon</title>
 </head>
 <body>
 <!-- SECTION BANNER -->
@@ -48,77 +48,163 @@
   <!-- SECTION SKILLS -->
 
 <div class="section-skills">
-    <div class="section-skills--content">
-        <h3 class="section-title">SKILLS</h3>
-
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>PostCSS</li>
-            <li>SCSS</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>jQuery</li>
-            <li>ReactJS</li>
-            <li>NodeJS</li>
-            <li>Webpack</li>
-            <li>Gulp</li>
-            <li>Git</li>
-        </ul>
+    <div class="section-skills--content container">
+        <h3 class="section-title">TECHNICAL SKILLS</h3>
+        <div class="row">
+            <div class="skills-front-end col m12 xl3">
+                <ul>
+                    <h4>Front-End</h4>
+                    <div class="skills-divider"></div>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Pug</li>
+                </ul>
+            </div>
+            <div class="skills-back-end col m12 xl3">
+                <ul class="skills-back-end">
+                    <h4>Back-End</h4>
+                    <div class="skills-divider"></div>
+                    <li>NodeJS/Express</li>
+                    <li>Mongo</li>
+                    <li>Heroku</li>
+                </ul>
+            </div>
+            <div class="skills-frameworks col m12 xl3">
+                <ul>
+                    <h4>Frameworks/Libraries</h4>
+                    <div class="skills-divider"></div>
+                    <li>Sass</li>
+                    <li>Materialize</li>
+                    <li>Bootstrap</li>
+                    <li>JQuery</li>
+                </ul>
+            </div>
+            <div class="skills-build-tools col m12 xl3">
+                <ul>
+                    <h4>Build Tools</h4>
+                    <div class="skills-divider"></div>
+                    <li>Webpack</li>
+                    <li>Gulp</li>
+                    <li>NPM Scripts</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
     <!-- SECTION PROJECTS -->
-
 <div class="section-projects">
-    <div class="section-projects--content">
+    <div class="section-projects--content container">
         <h3 class="section-title">PROJECTS</h3>
+        <div class="row">
+            <div class="col m12 l6 xl4"> <!-- Project 1 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://unsplash.it/300/200?random">
+                        <span class="card-title">Project 1</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="waves-effect waves-light btn">Demo</a>
+                        <a class="waves-effect waves-light btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="section-projects--article">
-            <h4 class="section-projects--project-title">TODO app</h4>
-            <img src="assets/images/todo-app.jpg" alt="project-1">
-            <p>Vim putant nusquam ei, pri ei voluptua dissentiunt, appareat imperdiet quo te. Vel nonumes appareat dissentiunt ea, ius detraxit definiebas eu</p>
-            <div>
-                <a href="https://egodon.github.io/TODO-app/" target="_blank" class="btn-project">View Project</a>
-                <a href="https://github.com/egodon/TODO-app" target="_blank" class="btn-project btn-github">View on GitHub</a>
+            <div class="col m12 l6 xl4"> <!-- Project 2 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://unsplash.it/300/200?random">
+                        <span class="card-title">Project 2</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="waves-effect waves-light btn">Demo</a>
+                        <a class="waves-effect waves-light btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col m12 l6 xl4"> <!-- Project 3 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://unsplash.it/300/200?random">
+                        <span class="card-title">Project 3</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="waves-effect waves-light btn">Demo</a>
+                        <a class="waves-effect waves-light btn">GitHub</a>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="section-projects--article">
-            <h4 class="section-projects--project-title">Website 1</h4>
-            <img src="assets/images/website1.jpg" alt="project-2">
-            <p>Usu eros error aliquando at. Quem ornatus ponderum no mea, vim ne integre expetendis. Vim sumo harum ea, ius detraxit definiebas eu.</p>
-            <div>
-                <a class="btn-project">View Project</a>
-                <a class="btn-project btn-github">View on GitHub</a>
+        <div class="row">
+            <div class="col m12 xl4"> <!-- Project 4 -->
+                <div class="card ">
+                    <div class="card-image">
+                        <img src="https://unsplash.it/300/200?random">
+                        <span class="card-title">Project 4</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="waves-effect waves-light btn">Demo</a>
+                        <a class="waves-effect waves-light btn">GitHub</a>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="section-projects--article">
-            <h4 class="section-projects--project-title">Website 2</h4>
-            <img src="assets/images/website2.jpg" alt="project-3">
-            <p>Nullam labitur tractatos est te, molestie adipiscing pri ei. Nihil erroribus imperdiet in pro, per adhuc brute gloriatur eu. Pro homero volumus consetetur at</p>
-            <div>
-                <a class="btn-project">View Project</a>
-                <a class="btn-project btn-github">View on GitHub</a>
+            <div class="col m12 l4"> <!-- Project 5 -->
+                <div class="card    ">
+                    <div class="card-image">
+                        <img src="https://unsplash.it/300/200?random">
+                        <span class="card-title">Project 5</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="waves-effect waves-light btn">Demo</a>
+                        <a class="waves-effect waves-light btn">GitHub</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="section-projects--article">
-            <h4 class="section-projects--project-title">Portfolio</h4>
-            <img src="assets/images/portfolio.jpg" alt="project-3">
-            <p>Nullam labitur tractatos est te, molestie adipiscing pri ei. Nihil erroribus imperdiet in pro, per adhuc brute gloriatur eu. Pro homero volumus consetetur at</p>
-            <div>
-                <a class="btn-project btn-github">View on GitHub</a>
+            <div class="col m12 l6 xl4"> <!-- Project 6 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://unsplash.it/300/200?random">
+                        <span class="card-title">Project 6</span>
+                    </div>
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a class="waves-effect waves-light btn">Demo</a>
+                        <a class="waves-effect waves-light btn">GitHub</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+    </div> <!-- End of container -->
 </div>
 
 
-
-    <!-- SECTION ABOUT -->
+<!-- SECTION ABOUT -->
 <div class="section-about">
-    <div class="section-about--content">
+    <div class="section-about--content ">
         <h3 class="section-title">ABOUT</h3>
         <div class="about-container">
           <img src="assets/images/profile-picture.jpg" alt="profile-picture">
@@ -149,9 +235,10 @@
 
 
   <footer>
-    <p>© 2017 Designed and developed by Evan Godon</p>
+    <p>© 2017 Evan Godon</p>
   </footer>
 
-	<script src="assets/scripts/App-ea2191e02d.js"></script>
+	<script src="assets/scripts/app-fcac7ea293.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </body>
 </html>
