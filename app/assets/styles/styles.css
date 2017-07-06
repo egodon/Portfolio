@@ -2,10 +2,11 @@
 @import "base/_mixins";
 @import "base/_global";
 @import "modules/buttons";
-@import "modules/_nav";
+@import "modules/_nav-button";
+@import "modules/_nav-bar";
 @import "modules/_section-banner";
-@import "modules/_section-about";
 @import "modules/_section-skills";
 @import "modules/_section-projects";
+@import "modules/_section-about";
 @import "modules/_section-contact";
 @import "modules/_footer";

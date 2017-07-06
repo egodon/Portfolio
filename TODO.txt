@@ -2,7 +2,9 @@
 
  Finish Skills section
 
- Develop the desktop navigation bar
+ -Develop the desktop navigation bar
+ -Materialize nav button
+
 
 
 
