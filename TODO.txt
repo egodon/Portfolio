@@ -1,8 +1,5 @@
 
-
- Finish Skills section
-
- -Develop the desktop navigation bar
+-Write code for buttons
  -Materialize nav button
 
 

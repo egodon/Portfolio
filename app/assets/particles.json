@@ -51,7 +51,7 @@
       "enable": true,
       "distance": 150,
       "color": "#000000",
-      "opacity": 0.2,
+      "opacity": 0.1,
       "width": 1
     },
     "move": {
@@ -75,25 +75,25 @@
     "events": {
       "onhover": {
         "enable": true,
-        "mode": ["bubble", "repulse"]
+        "mode": ["grab"]
       },
       "onclick": {
-        "enable": false,
-        "mode": "push"
+        "enable": true,
+        "mode": "bubble"
       },
       "resize": true
     },
     "modes": {
       "grab": {
-        "distance": 400,
+        "distance": 300,
         "line_linked": {
-          "opacity": 0.5
+          "opacity": 0.2
         }
       },
       "bubble": {
         "distance": 400,
-        "size": 60,
-        "duration": 2,
+        "size": 15,
+        "duration": 1,
         "opacity": 0.4,
         "speed": 3
       },

@@ -1,5 +1,6 @@
 import NavBtn from './modules/NavBtn';
-import particles from 'particles.js'
+import particles from 'particles.js';
+import smoothScroll from './modules/smoothScroll';
 
 
 

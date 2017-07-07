@@ -17,7 +17,7 @@
         transform: scale(4);
         margin: 3rem;
 
-        @mixin atLarge {
+        @mixin atMedium {
           transform: scale(1);
           margin: 0;
         }
@@ -32,7 +32,10 @@
   .nav-bar{
     border-top: 2px solid $darkGray;
     position: relative;
-
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     ul{
 
       li{
@@ -66,7 +69,12 @@
       li:after{
         transform-origin:  0% 50%;
       }
+
+      a{
+        padding: 0;
+      }
     }
+
   }
 
 }

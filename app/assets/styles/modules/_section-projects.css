@@ -26,7 +26,15 @@
         margin: 0 1rem;
       }
 
+      svg{
+        position: relative;
+        right: 7px;
+        top: 3px;
+      }
 
+      .btn-flat{
+        color: $black!important;
+      }
     }
 
 

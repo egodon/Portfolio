@@ -3,7 +3,7 @@ footer {
   padding: 1rem;
 
   @mixin atLarge {
-    height: 2rem;
+    height: 5rem;
   }
 
 

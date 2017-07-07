@@ -25,13 +25,6 @@
     }
   }
 
-  .btn-github {
-    border: 2px solid $accentColour;
-
-      &:hover {
-      background: $accentColour;
-      color: $almostWhite;
-    }
 }
 
 /*BUTTON FOR CONTACT FORM*/

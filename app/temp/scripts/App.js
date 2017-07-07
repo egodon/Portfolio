@@ -54,6 +54,10 @@
 
 	var _particles2 = _interopRequireDefault(_particles);
 
+	var _smoothScroll = __webpack_require__(4);
+
+	var _smoothScroll2 = _interopRequireDefault(_smoothScroll);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var navBtn = new _NavBtn2.default();
@@ -11913,6 +11917,35 @@
 	/*** EXPORTS FROM exports-loader ***/
 	exports["particlesJS"] = (window.particlesJS);
 	exports["pJSDom"] = (window.pJSDom);
+
+/***/ },
+/* 4 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	$(document).ready(function () {
+	    // Smooth Scroll to section
+	    $('a[href*="#"]').not('[href="#"]').click(function (event) {
+	        // On-page links
+	        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')) {
+	            // Figure out element to scroll to
+	            var target = $(this.hash);
+	            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	            // Does a scroll target exist?
+	            if (target.length) {
+	                event.preventDefault();
+	                $('html, body').animate({
+	                    scrollTop: target.offset().top
+	                }, 1000);
+	            }
+	        }
+	    });
+	    // When "contact" is clicked
+	    $('#contact-nav-btn').click(function () {
+	        $('#first_name').focus();
+	    });
+	});
 
 /***/ }
 /******/ ]);
