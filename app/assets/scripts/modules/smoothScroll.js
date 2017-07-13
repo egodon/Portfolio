@@ -9,7 +9,7 @@ $( document).ready(function() {
                 // Figure out element to scroll to
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                // Does a scroll target exist?
+
                 if (target.length) {
                     event.preventDefault();
                     $('html, body').animate({
@@ -19,9 +19,9 @@ $( document).ready(function() {
 
             }
         });
-        // When "contact" is clicked
-        $('#contact-nav-btn').click(function(){
-            $('#first_name').focus();
-        });
+    // When "contact" is clicked
+    $('#contact-nav-btn').click(function(){
+        $('#first_name').focus();
     });
+});
 

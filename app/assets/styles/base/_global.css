@@ -29,7 +29,6 @@ button {
 }
 
 a {
-  padding: 10px 25px;
   cursor: pointer;
   text-decoration: none;
   color: $almostBlack;

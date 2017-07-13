@@ -22,9 +22,6 @@
       display: flex;
       justify-content: center;
 
-      a{
-        margin: 0 1rem;
-      }
 
       svg{
         position: relative;
@@ -32,11 +29,12 @@
         top: 3px;
       }
 
-      .btn-flat{
-        color: $black!important;
-      }
     }
 
+    .card-buttons{
+      display: flex;
+      justify-content: center;
+    }
 
   }
 }

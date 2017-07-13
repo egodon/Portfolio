@@ -1,15 +1,10 @@
 /*BUTTONS FOR PROJECT SECTION*/
-.btn-project {
-  border: 2px solid $almostBlack;
-  width: 16rem;
-  height: 5rem;
+.section-projects a.btn-flat{
+  border: 1px solid $almostBlack;
+  margin-right: 0;
   transition: all .2s;
-  margin: 2rem 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-
+  color: #000;
+  text-align: center;
 
   &:hover {
     background:$almostBlack;
@@ -17,14 +12,20 @@
   }
 
     @mixin atLarge {
-      font-size: 1rem;
-      margin: 2rem 1rem;
-      width: 8rem;
-      height: 2rem;
+
 
     }
-  }
+}
 
+
+
+.btn-github {
+  border: 1px solid $accentColour;
+
+  &:hover {
+    background: $accentColour;
+    color: $almostWhite;
+  }
 }
 
 /*BUTTON FOR CONTACT FORM*/

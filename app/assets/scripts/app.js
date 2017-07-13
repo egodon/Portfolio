@@ -9,6 +9,4 @@ import smoothScroll from './modules/smoothScroll';
 var navBtn = new NavBtn();
 
 // Particles.js
-particles.particlesJS.load('particles-js', 'assets/particles.json', function() {
-  console.log('particles.js config loaded');
-});
+particles.particlesJS.load('particles-js', 'assets/particles.json');

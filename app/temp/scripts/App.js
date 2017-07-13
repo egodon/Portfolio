@@ -63,9 +63,7 @@
 	var navBtn = new _NavBtn2.default();
 
 	// Particles.js
-	_particles2.default.particlesJS.load('particles-js', 'assets/particles.json', function () {
-	  console.log('particles.js config loaded');
-	});
+	_particles2.default.particlesJS.load('particles-js', 'assets/particles.json');
 
 /***/ },
 /* 1 */
@@ -11932,7 +11930,7 @@
 	            // Figure out element to scroll to
 	            var target = $(this.hash);
 	            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-	            // Does a scroll target exist?
+
 	            if (target.length) {
 	                event.preventDefault();
 	                $('html, body').animate({

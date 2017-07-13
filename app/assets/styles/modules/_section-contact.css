@@ -7,9 +7,10 @@
     }
 
 
+
+
   .input-field input[type]:focus + label {
     color: $accentColour;
-
   }
 
   .input-field input[type]:focus {
@@ -18,6 +19,15 @@
   }
 
   .input-field .prefix.active {
+    color: $accentColour;
+  }
+
+  .input-field .materialize-textarea:focus{
+    box-shadow: 0 1px 0 0 $accentColour;
+    border-bottom: 1px solid $accentColour;
+  }
+
+  .input-field .materialize-textarea:focus + label {
     color: $accentColour;
   }
 
