@@ -46,27 +46,65 @@
 
 	'use strict';
 
-	var _NavBtn = __webpack_require__(1);
-
-	var _NavBtn2 = _interopRequireDefault(_NavBtn);
-
-	var _particles = __webpack_require__(3);
-
-	var _particles2 = _interopRequireDefault(_particles);
-
-	var _smoothScroll = __webpack_require__(4);
+	var _smoothScroll = __webpack_require__(1);
 
 	var _smoothScroll2 = _interopRequireDefault(_smoothScroll);
 
+	var _NavBtn = __webpack_require__(2);
+
+	var _NavBtn2 = _interopRequireDefault(_NavBtn);
+
+	var _particles = __webpack_require__(4);
+
+	var _particles2 = _interopRequireDefault(_particles);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	// Load in Materialize.css
+	// require('materialize-loader');
+
+
+	// Load in styles
+	// import '../styles/styles.css'
+
+	// JS modules
 	var navBtn = new _NavBtn2.default();
 
 	// Particles.js
+
 	_particles2.default.particlesJS.load('particles-js', 'assets/particles.json');
 
 /***/ },
 /* 1 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	$(document).ready(function () {
+	    // Smooth Scroll to section
+	    $('a[href*="#"]').not('[href="#"]').click(function (event) {
+	        // On-page links
+	        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')) {
+	            // Figure out element to scroll to
+	            var target = $(this.hash);
+	            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+	            if (target.length) {
+	                event.preventDefault();
+	                $('html, body').animate({
+	                    scrollTop: target.offset().top
+	                }, 1000);
+	            }
+	        }
+	    });
+	    // When "contact" is clicked
+	    $('#contact-nav-btn').click(function () {
+	        $('#first_name').focus();
+	    });
+	});
+
+/***/ },
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -77,7 +115,7 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _jquery = __webpack_require__(2);
+	var _jquery = __webpack_require__(3);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -141,7 +179,7 @@
 	exports.default = NavBtn;
 
 /***/ },
-/* 2 */
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10367,7 +10405,7 @@
 
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports) {
 
 	/* -----------------------------------------------
@@ -11915,35 +11953,6 @@
 	/*** EXPORTS FROM exports-loader ***/
 	exports["particlesJS"] = (window.particlesJS);
 	exports["pJSDom"] = (window.pJSDom);
-
-/***/ },
-/* 4 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	$(document).ready(function () {
-	    // Smooth Scroll to section
-	    $('a[href*="#"]').not('[href="#"]').click(function (event) {
-	        // On-page links
-	        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')) {
-	            // Figure out element to scroll to
-	            var target = $(this.hash);
-	            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-
-	            if (target.length) {
-	                event.preventDefault();
-	                $('html, body').animate({
-	                    scrollTop: target.offset().top
-	                }, 1000);
-	            }
-	        }
-	    });
-	    // When "contact" is clicked
-	    $('#contact-nav-btn').click(function () {
-	        $('#first_name').focus();
-	    });
-	});
 
 /***/ }
 /******/ ]);

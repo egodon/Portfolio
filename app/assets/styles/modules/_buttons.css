@@ -1,32 +1,35 @@
 /*BUTTONS FOR PROJECT SECTION*/
-.section-projects a.btn-flat{
-  border: 1px solid $almostBlack;
-  margin-right: 0;
+.card-buttons {
   transition: all .2s;
   color: #000;
   text-align: center;
 
-  &:hover {
-    background:$almostBlack;
-    color: $almostWhite;
-  }
 
-    @mixin atLarge {
+  .btn-demo{
+    border: 1px solid #000 ;
+    color: black !important;
 
 
+    &:hover {
+      background:$almostBlack;
+      color: $almostWhite !important;
     }
-}
 
-
-
-.btn-github {
-  border: 1px solid $accentColour;
-
-  &:hover {
-    background: $accentColour;
-    color: $almostWhite;
   }
+
+  a.btn-github {
+    border: 1px solid $accentColour;
+    color: $accentColour !important;
+    margin-right: 0 !important;
+
+    &:hover {
+      background:$accentColour;
+      color: $almostWhite !important;
+    }
+  }
+
 }
+
 
 /*BUTTON FOR CONTACT FORM*/
 .btn-form-send{

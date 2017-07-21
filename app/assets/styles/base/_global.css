@@ -3,7 +3,8 @@ body {
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    ::selection { background: $accentColour; }
+
+  ::selection { background: $accentColour; }
 
 }
 

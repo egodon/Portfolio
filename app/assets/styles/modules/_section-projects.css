@@ -14,28 +14,31 @@
       padding: 0 0;
     }
 
-    .card{
+    .card {
       margin: 2.5rem 2rem;
-    }
 
-    .card-action{
-      display: flex;
-      justify-content: center;
+      .card-action {
+        display: flex;
+        justify-content: center;
 
-
-      svg{
-        position: relative;
-        right: 7px;
-        top: 3px;
       }
 
-    }
+      .card-title {
+        color: $almostBlack;
+      }
 
-    .card-buttons{
-      display: flex;
-      justify-content: center;
-    }
+      .built-with-list{
+        margin-top: 1rem;
+        li {
+        display: inline;
+        }
+      }
 
+      .card-buttons {
+        display: flex;
+        justify-content: center;
+      }
+    }
   }
 }
 

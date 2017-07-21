@@ -67,26 +67,32 @@ p, button, li, h4 {
 
 }
 /*BUTTONS FOR PROJECT SECTION*/
-.section-projects a.btn-flat{
-  border: 1px solid #222222;
-  margin-right: 0;
+.card-buttons {
   -webkit-transition: all .2s;
   transition: all .2s;
   color: #000;
   text-align: center;
-}
-.section-projects a.btn-flat:hover {
-    background:#222222;
-    color: #ffffff;
 
 }
-@media (min-width: 1010px) {}
-.btn-github {
-  border: 1px solid #ef5350;
+.card-buttons .btn-demo{
+    border: 1px solid #000 ;
+    color: black !important;
+
 }
-.btn-github:hover {
-    background: #ef5350;
-    color: #ffffff;
+.card-buttons .btn-demo:hover {
+    background:#222222;
+    color: #ffffff !important;
+
+}
+.card-buttons a.btn-github {
+    border: 1px solid #ef5350;
+    color: #ef5350 !important;
+    margin-right: 0 !important;
+
+}
+.card-buttons a.btn-github:hover {
+    background:#ef5350;
+    color: #ffffff !important;
 
 }
 /*BUTTON FOR CONTACT FORM*/
@@ -306,7 +312,7 @@ p, button, li, h4 {
     .nav-bar-container .icons-container .icons .icon {
         -webkit-transform: scale(1);
                 transform: scale(1);
-        margin: 0;
+        margin: 1rem;
 
     }
 
@@ -562,11 +568,11 @@ p, button, li, h4 {
     padding: 0 0;
 
 }
-.section-projects--content .card{
+.section-projects--content .card {
     margin: 2.5rem 2rem;
 
 }
-.section-projects--content .card-action{
+.section-projects--content .card .card-action {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -575,13 +581,19 @@ p, button, li, h4 {
             justify-content: center;
 
 }
-.section-projects--content .card-action svg{
-    position: relative;
-    right: 7px;
-    top: 3px;
+.section-projects--content .card .card-title {
+    color: #222222;
 
 }
-.section-projects--content .card-buttons{
+.section-projects--content .card .built-with-list{
+    margin-top: 1rem;
+
+}
+.section-projects--content .card .built-with-list li {
+    display: inline;
+
+}
+.section-projects--content .card .card-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
