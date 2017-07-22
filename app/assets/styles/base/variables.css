@@ -8,7 +8,8 @@ $accentColour: #ef5350;
 $lightRed: #ef9a9a;
 $almostBlack: #222222;
 $contact-background: #F48989;
+$formLabelColor: #9e9e9e;
 
 /*Font-sizes*/
 $fontSizeSmall: 2rem;
-$fontSizeLarge: 1.125rem;
+$fontSizeLarge: 1rem;

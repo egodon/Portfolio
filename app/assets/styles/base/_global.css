@@ -43,7 +43,7 @@ p, button, li, h4 {
 
 
   @mixin atLarge {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 }
 
