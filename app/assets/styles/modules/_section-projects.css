@@ -1,6 +1,9 @@
 .section-projects {
   background: $lightGray;
 
+
+
+
   &--content{
     padding: 1rem 0;
     max-width: 1600px;
@@ -16,27 +19,40 @@
 
     .card {
       margin: 2.5rem 2rem;
-
-      .card-action {
-        display: flex;
-        justify-content: center;
-
-      }
+      min-height: 475px;
 
       .card-title {
-        /*color: $almostBlack;*/
+        color: $almostBlack;
       }
+
+
+
+      .card-action {
+        position: absolute;
+        bottom: 0;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        width: 100%;
+      }
+
+
 
       .built-with-list{
         margin-top: 1rem;
+
         li {
+        color: $almostWhite;
         display: inline;
+        padding: 5px;
+        border-radius: 0px;
+        background: $lightRed;
+        box-shadow: 5px;
         }
       }
 
+
       .card-buttons {
-        display: flex;
-        justify-content: center;
+
       }
     }
   }

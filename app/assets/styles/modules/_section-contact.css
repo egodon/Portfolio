@@ -31,6 +31,9 @@
     color: $accentColour;
   }
 
+  .btn-form-send:focus{
+    background: $veryLightGray;
+  }
 
 
 }

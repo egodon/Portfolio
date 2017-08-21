@@ -46,9 +46,7 @@
 
 	'use strict';
 
-	var _smoothScroll = __webpack_require__(1);
-
-	var _smoothScroll2 = _interopRequireDefault(_smoothScroll);
+	__webpack_require__(1);
 
 	var _NavBtn = __webpack_require__(2);
 
@@ -60,15 +58,8 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	// Load in Materialize.css
-	// require('materialize-loader');
-
-
-	// Load in styles
-	// import '../styles/styles.css'
-
 	// JS modules
-	var navBtn = new _NavBtn2.default();
+	new _NavBtn2.default();
 
 	// Particles.js
 

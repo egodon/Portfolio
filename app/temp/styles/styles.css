@@ -578,19 +578,19 @@ p, button, li, h4 {
 }
 .section-projects--content .card {
     margin: 2.5rem 2rem;
-
-}
-.section-projects--content .card .card-action {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    min-height: 475px;
 
 }
 .section-projects--content .card .card-title {
-    /*color: $almostBlack;*/
+    color: #222222;
+
+}
+.section-projects--content .card .card-action {
+    position: absolute;
+    bottom: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
 
 }
 .section-projects--content .card .built-with-list{
@@ -598,18 +598,15 @@ p, button, li, h4 {
 
 }
 .section-projects--content .card .built-with-list li {
+    color: #ffffff;
     display: inline;
+    padding: 5px;
+    border-radius: 0px;
+    background: #ef9a9a;
+    box-shadow: 5px;
 
 }
-.section-projects--content .card .card-buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-
-}
+.section-projects--content .card .card-buttons {}
 .section-about {
   background: #eef2f3;
 }
@@ -681,7 +678,6 @@ p, button, li, h4 {
   padding: 3rem 7rem;
 
 
-
 }
 .section-contact h4{
     text-align: center;
@@ -707,6 +703,10 @@ p, button, li, h4 {
 }
 .section-contact .input-field .materialize-textarea:focus + label {
     color: #ef5350;
+
+}
+.section-contact .btn-form-send:focus{
+    background: #eef2f3;
 
 }
 .page-footer{
