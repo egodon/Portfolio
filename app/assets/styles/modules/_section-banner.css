@@ -1,9 +1,13 @@
 .section-banner {
-  height: 100vh;
+  height: 110rem;
   background: $veryLightGray;
   z-index: 0;
   display: flex;
   justify-content: center;
+
+  @mixin atLarge{
+    height: 100vh;
+  }
 
   canvas {
     display: none;
@@ -33,49 +37,43 @@
 
   }
 
-  .header-container{
-    position: absolute;
-    top: 20%;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-  }
+  .header-container {
+    margin-top: 6rem;
 
-  .logo {
-    width: 200px;
-    height: 200px;
-    z-index: 5;
-  }
-
-
-
-  h1 {
-    color: $darkGray;
-    font-size: 4.8rem;
-    z-index: 7;
-    visibility: none;
-
-    @mixin atLarge{
-      font-size: 2.6rem;
-      color: $darkGray;
-      letter-spacing: 4px;
+    .logo {
+      width: 200px;
+      height: 200px;
+      z-index: 5;
     }
-  }
 
-  h2 {
-    color: $darkGray;
-    font-size: 2.6rem;
-    font-weight: 100;
-    margin-top: 1rem;
-    font-weight: bold;
-    z-index: 7;
+    h1 {
+      color: $ darkGray;
+      font-size: 4.8rem;
+      z-index: 7;
+      visibility: none;
 
-    @mixin atLarge {
-      font-size: 1.5rem;
-      font-weight: 200;
-      letter-spacing: 2px;
-      color: $darkGray;
-      letter-spacing: 10px;
+      @mixin atLarge {
+        font-size: 2.6rem;
+        color: $ darkGray;
+        letter-spacing: 4px;
+      }
+    }
+
+    h2 {
+      color: $ darkGray;
+      font-size: 2.6rem;
+      font-weight: 100;
+      margin-top: 1rem;
+      font-weight: bold;
+      z-index: 7;
+
+      @mixin atLarge {
+        font-size: 1.5rem;
+        font-weight: 200;
+        letter-spacing: 2px;
+        color: $ darkGray;
+        letter-spacing: 10px;
+      }
     }
   }
 
@@ -84,28 +82,4 @@
     color: $almostWhite;
     width: 650px;
   }
-
-
-
-
-
-
-  &--button{
-
-    width: 100%;
-    position: absolute;
-    bottom: 100px;
-    text-align: center;
-    padding-bottom: 1rem;
-
-      button {
-        border: 1px solid white;
-        font-size: 2.4rem;
-        width: 100px;
-        height: 100px;
-        display: none;
-      }
-
-    }
-
 }

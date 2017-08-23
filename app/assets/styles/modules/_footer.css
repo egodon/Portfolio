@@ -1,10 +1,5 @@
 .page-footer{
   color: $darkGray;
-
-
-
-  .container{
-    color: $darkGray;
-  }
+  padding: 1rem 0;
 
 }

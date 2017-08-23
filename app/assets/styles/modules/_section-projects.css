@@ -2,8 +2,6 @@
   background: $lightGray;
 
 
-
-
   &--content{
     padding: 1rem 0;
     max-width: 1600px;
@@ -19,13 +17,33 @@
 
     .card {
       margin: 2.5rem 2rem;
-      min-height: 475px;
+      min-height: 500px;
+
+
 
       .card-title {
         color: $almostBlack;
+        font-size: 3rem;
+
+        @mixin atLarge{
+          font-size: 1.6rem;
+        }
       }
 
+      .card-content {
+        position: relative;
+        p {
+          font-size: 2rem;
+          @mixin atLarge{
+            font-size: 1.2rem;
+          }
+        }
 
+        ul {
+
+        }
+
+      }
 
       .card-action {
         position: absolute;
@@ -45,11 +63,10 @@
         display: inline;
         padding: 5px;
         border-radius: 0px;
-        background: $lightRed;
+        background: rgba($accentColour,0.8);
         box-shadow: 5px;
         }
       }
-
 
       .card-buttons {
 

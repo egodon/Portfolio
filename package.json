@@ -39,8 +39,7 @@
     "webpack": "^1.14.0"
   },
   "scripts": {
-    "test": "karma start",
-    "start": "node server.js"
+    "start": "gulp watch"
   },
   "author": "Evan Godon",
   "license": "ISC"

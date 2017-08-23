@@ -2,9 +2,6 @@
   background: $almostWhite;
   padding: 3rem 7rem;
 
-    h4{
-      text-align: center;
-    }
 
 
 
@@ -33,6 +30,14 @@
 
   .btn-form-send:focus{
     background: $veryLightGray;
+  }
+
+  .btn-form-send i{
+    display: none;
+
+    @mixin atLarge{
+      display: block;
+    }
   }
 
 

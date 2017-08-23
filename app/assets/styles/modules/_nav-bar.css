@@ -1,11 +1,9 @@
 
-
-
 .nav-bar-container{
   position: absolute;
-  padding: 0 3rem;
   bottom: 5%;
-  z-index: 2;
+
+
   .icons-container{
     margin-bottom: 1.5rem;
 
@@ -15,9 +13,13 @@
 
       .icon{
         transform: scale(4);
-        margin: 3rem;
 
         @mixin atMedium {
+          transform: scale(2);
+          margin: 3rem;
+        }
+
+        @mixin atLarge{
           transform: scale(1);
           margin: 1rem;
         }
@@ -36,14 +38,18 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    ul{
 
+    ul{
       li{
         display: inline-block;
         font-size: 4rem;
         color: black;
         margin: 2rem 2rem;
         cursor: pointer;
+
+        @mixin atMedium{
+          font-size: 2.5rem;
+        }
 
         @mixin atLarge{
           font-size: 1.5rem;
@@ -74,7 +80,5 @@
         padding: 0;
       }
     }
-
   }
-
 }

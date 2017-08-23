@@ -1,20 +1,15 @@
+Move favicon.ico to docs
 
--Write code for buttons
- -Materialize nav button
+Resize images to same size
 
+Fix responsive project section
 
-
-
-BUGS:
--Fix nav menu btn when scroll up
 
 
 FEATURES ONCE FINISHED:
 -animate logo
 -Make dark mode
--Add Google captcha widget
 
 OPTIMIZATION:
--60fps animations
 -lazyload images
 -SVG all the things

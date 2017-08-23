@@ -1,12 +1,6 @@
 .section-about {
   background: $veryLightGray;
 
-
-  @mixin atLarge {
-
-  }
-
-
   &--content{
     padding: 3rem 7rem;
     display: flex;
@@ -15,7 +9,6 @@
   }
 
   .about-container {
-    margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,5 +37,10 @@
     height: 247.95px;
     margin: 2rem 2rem;
     filter: grayscale(100%);
+
+    @mixin atLarge{
+      width: 179.44px;
+      height: 185.59px;
+    }
   }
 }
