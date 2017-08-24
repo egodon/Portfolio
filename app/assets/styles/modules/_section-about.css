@@ -25,7 +25,7 @@
     line-height: 3rem;
 
 
-    @mixin atLarge {
+    @mixin atSmall {
       font-size: fontSizeLarge;
       line-height: 1.5rem;
       font-size: 1.125rem;
@@ -38,7 +38,7 @@
     margin: 2rem 2rem;
     filter: grayscale(100%);
 
-    @mixin atLarge{
+    @mixin atMedium{
       width: 179.44px;
       height: 185.59px;
     }

@@ -1,9 +1,10 @@
 .section-banner {
-  height: 110rem;
   background: $veryLightGray;
   z-index: 0;
   display: flex;
   justify-content: center;
+  position: relative;
+
 
   @mixin atLarge{
     height: 100vh;
@@ -39,6 +40,7 @@
 
   .header-container {
     margin-top: 6rem;
+    margin-bottom: 30rem;
 
     .logo {
       width: 200px;
@@ -47,25 +49,30 @@
     }
 
     h1 {
-      color: $ darkGray;
+      color: $darkGray;
       font-size: 4.8rem;
       z-index: 7;
-      visibility: none;
+
+      @mixin atMedium{
+        font-size: 3rem;
+      }
 
       @mixin atLarge {
         font-size: 2.6rem;
-        color: $ darkGray;
         letter-spacing: 4px;
       }
     }
 
     h2 {
-      color: $ darkGray;
+      color: $darkGray;
       font-size: 2.6rem;
       font-weight: 100;
       margin-top: 1rem;
-      font-weight: bold;
       z-index: 7;
+
+      @mixin atMedium{
+        font-size: 1.8rem;
+      }
 
       @mixin atLarge {
         font-size: 1.5rem;

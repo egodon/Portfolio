@@ -18,6 +18,13 @@
     .card {
       margin: 2.5rem 2rem;
       min-height: 500px;
+      min-width: 345px;
+
+      img{
+        width: 100%;
+        min-width: 221.69px;
+        height: 221.69px;
+      }
 
 
 
@@ -25,7 +32,7 @@
         color: $almostBlack;
         font-size: 3rem;
 
-        @mixin atLarge{
+        @mixin atSmall{
           font-size: 1.6rem;
         }
       }
@@ -34,14 +41,11 @@
         position: relative;
         p {
           font-size: 2rem;
-          @mixin atLarge{
+          @mixin atSmall{
             font-size: 1.2rem;
           }
         }
 
-        ul {
-
-        }
 
       }
 
