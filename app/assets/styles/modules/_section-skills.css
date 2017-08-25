@@ -2,8 +2,6 @@
   background: $lightRed;
   color: $darkGray;
 
-
-
   &--content{
     padding: 1rem 0;
     max-width: 1600px;
@@ -12,6 +10,7 @@
     @mixin atXLarge{
       padding: 3rem 7rem;
     }
+
 
     ul {
       margin-top: 3rem;
@@ -32,15 +31,13 @@
       padding: 2px 10px;
       margin: 10px 20px;
 
-      @mixin atMedium{
+      @mixin atSmall{
         font-size: 1.6rem;
       }
 
       @mixin atLarge{
         font-size: 1.2rem;
       }
-
-
     }
 
     .skills-divider {

@@ -1,10 +1,7 @@
-Move favicon.ico to docs
 
-Resize images to same size
+-Stick ul build items to bottom
 
-Fix responsive project section
-
-
+-fix font sizes
 
 FEATURES ONCE FINISHED:
 -animate logo

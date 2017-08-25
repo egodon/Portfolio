@@ -82,8 +82,16 @@ p, button, li, h4 {
 }
 @media (min-width: 530px) {
     .card-buttons .btn-flat {
-        height: 46px;
+        height: 50px;
         font-size: 1.75rem;
+
+    }
+
+}
+@media (min-width: 768px) {
+    .card-buttons .btn-flat {
+        height: 40px;
+        font-size: 1.4rem;
 
     }
 
@@ -98,7 +106,16 @@ p, button, li, h4 {
 }
 .card-buttons .btn-demo{
     border: 1px solid #000 ;
-    color: #222222 !important;
+    background: #222222;
+    color: #ffffff !important;
+
+}
+@media (min-width: 1010px) {
+    .card-buttons .btn-demo {
+        color: #222222 !important;
+        background: #fff;
+
+    }
 
 }
 .card-buttons .btn-demo:hover {
@@ -108,9 +125,18 @@ p, button, li, h4 {
 }
 .card-buttons a.btn-github {
     border: 1px solid #ef5350;
-    color: #ef5350 !important;
     margin-right: 0 !important;
     padding: 0 1.6rem;
+    color: #ffffff !important;
+    background: #ef5350;
+
+}
+@media (min-width: 1010px) {
+    .card-buttons a.btn-github {
+        background: #ffffff;
+        color: #ef5350 !important;
+
+    }
 
 }
 .card-buttons a.btn-github:hover {
@@ -581,7 +607,7 @@ p, button, li, h4 {
     margin: 10px 20px;
 
 }
-@media (min-width: 768px) {
+@media (min-width: 530px) {
     .section-skills--content li {
         font-size: 1.6rem;
 
@@ -630,14 +656,20 @@ p, button, li, h4 {
 }
 .section-projects--content .card {
     margin: 2.5rem 2rem;
-    min-height: 500px;
-    min-width: 345px;
+    min-height: 470px;
+    min-width: 348px;
 
 }
 .section-projects--content .card img{
     width: 100%;
-    min-width: 221.69px;
-    height: 221.69px;
+
+}
+@media (min-width: 1010px) {
+    .section-projects--content .card img {
+        min-width: 221.69px;
+        height: 221.69px;
+
+    }
 
 }
 .section-projects--content .card .card-title {
@@ -654,6 +686,22 @@ p, button, li, h4 {
 }
 .section-projects--content .card .card-content {
     position: relative;
+    min-height: 275px;
+    padding-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+}
+@media (min-width: 1010px) {
+    .section-projects--content .card .card-content {
+        min-height: 0;
+
+    }
 
 }
 .section-projects--content .card .card-content p {
@@ -662,33 +710,48 @@ p, button, li, h4 {
 }
 @media (min-width: 530px) {
     .section-projects--content .card .card-content p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
 
     }
+
+}
+@media (min-width: 1010px) {
+    .section-projects--content .card .card-content p {
+        font-size: 1rem;
+
+    }
+
+}
+.section-projects--content .card .built-with-list{
+    margin: 1rem 0 0 0;
+
+}
+.section-projects--content .card .built-with-list li {
+    color: #ef5350;
+    display: inline;
+    padding: 5px;
+    border-radius: 0px;
+    background: #fff;
+    border: 1px solid #ef5350;
 
 }
 .section-projects--content .card .card-action {
     position: absolute;
     bottom: 0;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
     width: 100%;
+    padding: 0.5rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
 }
-.section-projects--content .card .built-with-list{
-    margin-top: 1rem;
+.section-projects--content .card .card-buttons{
+    margin: 0.5rem 0;
 
 }
-.section-projects--content .card .built-with-list li {
-    color: #ffffff;
-    display: inline;
-    padding: 5px;
-    border-radius: 0px;
-    background: rgba(239,83,80,0.8);
-    box-shadow: 5px;
-
-}
-.section-projects--content .card .card-buttons {}
 .section-about {
   background: #eef2f3;
 }

@@ -17,13 +17,17 @@
 
     .card {
       margin: 2.5rem 2rem;
-      min-height: 500px;
-      min-width: 345px;
+      min-height: 470px;
+      min-width: 348px;
 
       img{
         width: 100%;
-        min-width: 221.69px;
-        height: 221.69px;
+
+        @mixin atLarge{
+          min-width: 221.69px;
+          height: 221.69px;
+
+        }
       }
 
 
@@ -39,42 +43,55 @@
 
       .card-content {
         position: relative;
+        min-height: 275px;
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        @mixin atLarge{
+          min-height: 0;
+        }
         p {
           font-size: 2rem;
+
           @mixin atSmall{
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+          }
+
+          @mixin atLarge{
+            font-size: 1rem;
           }
         }
+      }
 
+      .built-with-list{
+        margin: 1rem 0 0 0;
 
+        li {
+          color: $accentColour;
+          display: inline;
+          padding: 5px;
+          border-radius: 0px;
+          background: #fff;
+          border: 1px solid $accentColour;
+        }
       }
 
       .card-action {
         position: absolute;
         bottom: 0;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
         width: 100%;
+        padding: 0.5rem 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .card-buttons{
+        margin: 0.5rem 0;
       }
 
 
 
-      .built-with-list{
-        margin-top: 1rem;
-
-        li {
-        color: $almostWhite;
-        display: inline;
-        padding: 5px;
-        border-radius: 0px;
-        background: rgba($accentColour,0.8);
-        box-shadow: 5px;
-        }
-      }
-
-      .card-buttons {
-
-      }
     }
   }
 }

@@ -8,9 +8,15 @@
     height: 60px;
     font-size: 2.5rem;
 
+
     @mixin atSmall{
-      height: 46px;
+      height: 50px;
       font-size: 1.75rem;
+    }
+
+    @mixin atMedium{
+      height: 40px;
+      font-size: 1.4rem;
     }
 
     @mixin atLarge{
@@ -19,11 +25,16 @@
     }
   }
 
-
-
   .btn-demo{
     border: 1px solid #000 ;
+    background: $almostBlack;
+    color: $almostWhite !important;
+
+    @mixin atLarge{
     color: $almostBlack !important;
+    background: #fff;
+
+    }
 
     &:hover {
       background:$almostBlack;
@@ -34,9 +45,15 @@
 
   a.btn-github {
     border: 1px solid $accentColour;
-    color: $accentColour !important;
     margin-right: 0 !important;
     padding: 0 1.6rem;
+    color: $almostWhite !important;
+    background: $accentColour;
+
+    @mixin atLarge{
+    background: $almostWhite;
+    color: $accentColour !important;
+    }
 
     &:hover {
       background:$accentColour;
