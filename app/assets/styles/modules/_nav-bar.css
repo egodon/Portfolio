@@ -1,7 +1,10 @@
 
 .nav-bar-container{
+  margin: 0 auto;
   position: absolute;
   bottom: 5%;
+
+
   .icons-container{
     margin-bottom: 1.5rem;
 
@@ -15,6 +18,11 @@
         @mixin atSmall {
           transform: scale(2);
           margin: 3rem;
+        }
+
+        @mixin atMedium{
+          transform: scale(1.5);
+          margin: 2rem;
         }
 
         @mixin atLarge{
@@ -40,7 +48,7 @@
     ul{
       li{
         display: inline-block;
-        font-size: 4rem;
+        font-size: 2.2rem;
         color: black;
         margin: 2rem 2rem;
         cursor: pointer;
@@ -49,9 +57,10 @@
           font-size: 2rem;
         }
 
-        @mixin atMedium{
+        @mixin atLarge{
           font-size: 1.5rem;
         }
+
 
       }
 

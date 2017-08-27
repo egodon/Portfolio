@@ -2,10 +2,12 @@
   background: $lightGray;
 
 
+
   &--content{
     padding: 1rem 0;
     max-width: 1600px;
     width: 90%;
+
     @mixin atXLarge{
       padding: 3rem 7rem;
     }
@@ -19,47 +21,74 @@
       margin: 2.5rem 2rem;
       min-height: 470px;
       min-width: 348px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @mixin atMedium{
+      }
+
+      @mixin atLarge{
+        height: 470px;
+      }
+
 
       img{
         width: 100%;
 
+        @mixin atMedium{
+        }
+
         @mixin atLarge{
-          min-width: 221.69px;
           height: 221.69px;
 
         }
       }
 
-
-
       .card-title {
         color: $almostBlack;
-        font-size: 3rem;
+        font-size: 2rem;
 
         @mixin atSmall{
+          font-size: 1.9rem;
+        }
+
+        @mixin atMedium{
+          font-size: 1.8rem;
+        }
+
+        @mixin atLarge{
           font-size: 1.6rem;
         }
       }
 
       .card-content {
-        position: relative;
-        min-height: 275px;
         padding-top: 1rem;
+        padding-bottom: 1rem;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        flex:1;
 
         @mixin atLarge{
           min-height: 0;
         }
         p {
           font-size: 2rem;
+          flex: 1;
 
           @mixin atSmall{
-            font-size: 1.5rem;
+            font-size: 1.6rem;
+          }
+
+          @mixin atMedium{
+            font-size: 1.4rem;
+            line-height: 1.8rem;
           }
 
           @mixin atLarge{
             font-size: 1rem;
+            line-height: 1.2rem;
           }
         }
       }
@@ -78,8 +107,6 @@
       }
 
       .card-action {
-        position: absolute;
-        bottom: 0;
         width: 100%;
         padding: 0.5rem 0;
         display: flex;
@@ -87,11 +114,9 @@
       }
 
       .card-buttons{
+        align-self: flex-end;
         margin: 0.5rem 0;
       }
-
-
-
     }
   }
 }

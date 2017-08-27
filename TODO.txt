@@ -1,6 +1,4 @@
 
--Stick ul build items to bottom
-
 -fix font sizes
 
 FEATURES ONCE FINISHED:

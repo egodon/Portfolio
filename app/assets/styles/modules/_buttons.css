@@ -27,8 +27,8 @@
 
   .btn-demo{
     border: 1px solid #000 ;
-    background: $almostBlack;
-    color: $almostWhite !important;
+    color: $almostBlack !important;
+    background: #fff;
 
     @mixin atLarge{
     color: $almostBlack !important;
@@ -47,8 +47,8 @@
     border: 1px solid $accentColour;
     margin-right: 0 !important;
     padding: 0 1.6rem;
-    color: $almostWhite !important;
-    background: $accentColour;
+    background: $almostWhite;
+    color: $accentColour !important;
 
     @mixin atLarge{
     background: $almostWhite;

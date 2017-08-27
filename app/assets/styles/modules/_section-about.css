@@ -24,11 +24,18 @@
     letter-spacing: 1px;
     line-height: 3rem;
 
+    @mixin atSmall{
+      font-size: 1.6rem;
+    }
 
-    @mixin atSmall {
-      font-size: fontSizeLarge;
-      line-height: 1.5rem;
-      font-size: 1.125rem;
+    @mixin atMedium{
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+    }
+
+    @mixin atLarge{
+      font-size: 1rem;
+      line-height: 1.2rem;
     }
   }
 

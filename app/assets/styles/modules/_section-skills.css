@@ -15,13 +15,22 @@
     ul {
       margin-top: 3rem;
       text-align: center;
+      min-width: 330px;
     }
 
     li:first-child{
-      font-size: 2.5rem;
+      font-size: 3rem;
 
       @mixin atSmall{
-        font-size: 1.7rem;
+        font-size: 2rem;
+      }
+
+      @mixin atMedium{
+        font-size: 2rem;
+      }
+
+      @mixin atLarge{
+        font-size: 1.6rem;
       }
 
     }
@@ -32,6 +41,10 @@
       margin: 10px 20px;
 
       @mixin atSmall{
+        font-size: 1.6rem;
+      }
+
+      @mixin atMedium{
         font-size: 1.6rem;
       }
 
