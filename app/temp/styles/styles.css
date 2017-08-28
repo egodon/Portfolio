@@ -147,6 +147,7 @@ p, button, li, h4 {
     font-size: fontSizeSmall;
     color: #9e9e9e;
     border: 1px solid #9e9e9e;
+    background: #ffffff;
 }
 .btn-form-send:hover {
     color: #ef5350;

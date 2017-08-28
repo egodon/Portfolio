@@ -73,6 +73,7 @@
     font-size: fontSizeSmall;
     color: $formLabelColor;
     border: 1px solid $formLabelColor;
+    background: $almostWhite;
 
     &:hover {
       color: $accentColour;
