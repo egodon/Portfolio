@@ -39,7 +39,8 @@
     "webpack": "^1.14.0"
   },
   "scripts": {
-    "start": "gulp watch"
+    "start": "gulp watch",
+    "build": "gulp build && echo egodon.me > ./docs/CNAME"
   },
   "author": "Evan Godon",
   "license": "ISC"

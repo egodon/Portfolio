@@ -7,7 +7,7 @@
   .btn-flat{
     height: 60px;
     font-size: 2.5rem;
-
+    
 
     @mixin atSmall{
       height: 50px;
@@ -26,37 +26,36 @@
   }
 
   .btn-demo{
-    border: 1px solid #000 ;
-    color: $almostBlack !important;
-    background: #fff;
+    border: 1px solid $btn-colour-one ;
+    color: $btn-colour-one !important;
+    background: transparent;
 
     @mixin atLarge{
-    color: $almostBlack !important;
-    background: #fff;
+    color: $btn-colour-one !important;
+    background:transparent;
 
     }
 
     &:hover {
-      background:$almostBlack;
+      background:$btn-colour-one;
       color: $almostWhite !important;
     }
 
   }
 
   a.btn-github {
-    border: 1px solid $accentColour;
+    border: 1px solid $btn-colour-two;
     margin-right: 0 !important;
     padding: 0 1.6rem;
-    background: $almostWhite;
+    background: transparent;
     color: $accentColour !important;
 
     @mixin atLarge{
-    background: $almostWhite;
-    color: $accentColour !important;
+    color: $btn-colour-two !important;
     }
 
     &:hover {
-      background:$accentColour;
+      background:$btn-colour-two;
       color: $almostWhite !important;
     }
   }

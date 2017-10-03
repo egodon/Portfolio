@@ -38,7 +38,7 @@
   }
 
   .nav-bar{
-    border-top: 2px solid $darkGray;
+    border-top: 2px solid $home-section-font-color;
     position: relative;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -49,7 +49,7 @@
       li{
         display: inline-block;
         font-size: 2.2rem;
-        color: black;
+        
         margin: 2rem 2rem;
         cursor: pointer;
 
@@ -67,7 +67,7 @@
       li:after{
         display: block;
         content: '';
-        border-bottom: solid 2px #000;
+        border-bottom: solid 2px $home-section-font-color;
         transform: scaleX(0);
         transition: transform 250ms ease-in-out;
         transform-origin:  0% 50%;
@@ -86,6 +86,8 @@
 
       a{
         padding: 0;
+        color: $home-section-font-color;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.20);
       }
     }
   }

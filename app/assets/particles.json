@@ -8,13 +8,13 @@
       }
     },
     "color": {
-      "value": "#ff0000"
+      "value": "#fff"
     },
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#000000",
+        "color": "#fff",
         "opacity": 0
       },
       "polygon": {
@@ -48,9 +48,9 @@
       }
     },
     "line_linked": {
-      "enable": true,
+      "enable": false,
       "distance": 150,
-      "color": "#000000",
+      "color": "#fff",
       "opacity": 0.1,
       "width": 1
     },
@@ -74,8 +74,8 @@
     "detect_on": "window",
     "events": {
       "onhover": {
-        "enable": true,
-        "mode": ["grab"]
+        "enable": false,
+        "mode": ["repulse"]
       },
       "onclick": {
         "enable": true,

@@ -1,6 +1,23 @@
 
 /*Colours*/
-$almostWhite: #ffffff;
+
+/*background colors*/
+$gradient-left: #2E3192;
+$gradient-right: #22aaaa;
+
+/*font colors*/
+$home-section-font-color: #F5F5F5;
+ 
+
+/* button colours */
+$btn-colour-one: $gradient-left;
+$btn-colour-two: #D4145A;
+
+/* cards */
+
+
+
+$almostWhite: #fff;
 $veryLightGray: #eef2f3;
 $lightGray: #E6E6E6;
 $darkGray: #4d4d4d;

@@ -29,9 +29,9 @@ gulp.task('optimizeImages',['deleteDocsFolder'], function(){
 	.pipe(gulp.dest('./docs/assets/images'));
 });
 
-gulp.task('moveIcons',['deleteDocsFolder'], function () {
-	return gulp.src('./app/assets/images/icons/*.svg')
-	.pipe(gulp.dest('./docs/assets/images/icons'));
+gulp.task('moveFavIcons',['deleteDocsFolder'], function () {
+	return gulp.src(['./*.png', './favicon.ico'])
+	.pipe(gulp.dest('./docs/'));
 });
 
 gulp.task('moveParticleJSON',['deleteDocsFolder'], function () {
@@ -50,4 +50,4 @@ gulp.task('usemin', ['styles', 'scripts'], function(){
 });
 
 
-gulp.task('build', ['deleteDocsFolder', 'optimizeImages', 'moveIcons','moveParticleJSON', 'usemin']);
+gulp.task('build', ['deleteDocsFolder', 'optimizeImages', 'moveFavIcons','moveParticleJSON', 'usemin']);

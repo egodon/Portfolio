@@ -5,7 +5,7 @@
 
   &--content{
     padding: 1rem 0;
-    max-width: 1600px;
+    max-width: 1800px;
     width: 90%;
 
     @mixin atXLarge{
@@ -97,12 +97,12 @@
         margin: 1rem 0 0 0;
 
         li {
-          color: $accentColour;
+          color: $darkGray;
           display: inline;
           padding: 5px;
           border-radius: 0px;
           background: #fff;
-          border: 1px solid $accentColour;
+          border: 1px solid $darkGray;
         }
       }
 
@@ -111,6 +111,7 @@
         padding: 0.5rem 0;
         display: flex;
         justify-content: center;
+        
       }
 
       .card-buttons{

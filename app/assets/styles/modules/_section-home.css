@@ -1,9 +1,18 @@
 .section-banner {
-  background: $veryLightGray;
   z-index: 0;
   display: flex;
   justify-content: center;
   position: relative;
+
+  background: rgba(242,69,69,1);
+  background: -moz-linear-gradient(-45deg, rgba($gradient-left,1) 0%, rgba($gradient-right,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba($gradient-left,1)), color-stop(100%, rgba($gradient-right,1)));
+  background: -webkit-linear-gradient(-45deg, rgba($gradient-left,1) 0%, rgba($gradient-right,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba($gradient-left,1) 0%, rgba($gradient-right,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba($gradient-left,1) 0%, rgba($gradient-right,1) 100%);
+  background: linear-gradient(135deg, rgba($gradient-left,1) 0%, rgba($gradient-right,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f24545', endColorstr='#ebc18d', GradientType=1 );
+
 
 
   @mixin atLarge{
@@ -49,9 +58,10 @@
     }
 
     h1 {
-      color: $darkGray;
+      color: $home-section-font-color;
       font-size: 3rem;
       z-index: 7;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.20);
 
       @mixin atSmall{
         font-size: 3rem;
@@ -68,7 +78,8 @@
     }
 
     p {
-      color: $darkGray;
+      color: $home-section-font-color;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.20);
       font-size: 2.4rem;
       font-weight: 300;
       margin-top: 1rem;
