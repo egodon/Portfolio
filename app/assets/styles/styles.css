@@ -2,9 +2,7 @@
 @import "base/_mixins.css";
 @import "base/_global.css";
 
-
 @import "modules/_buttons.css";
-@import "modules/_nav-button.css";
 @import "modules/_nav-bar.css";
 @import "modules/_section-home.css";
 @import "modules/_section-skills.css";

@@ -77,12 +77,22 @@
     &:hover {
       color: $accentColour;
       border-color: $accentColour;
+    }
 
+    .section-contact &:focus {
+      background: $almostWhite;
     }
     @mixin atLarge {
       width: 10rem;
-      height: 3rem;
+      height: 3.4rem;
       font-size: $fontSizeLarge;
       margin: 0;
     }
+}
+
+.form-submitted{
+  color: $accentColour;
+  border-color: $accentColour;
+  cursor: default;
+  pointer-events:none;
 }

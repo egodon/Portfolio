@@ -1,5 +1,5 @@
 
-$( document).ready(function() {
+$(document).ready(function() {
     // Smooth Scroll to section
     $('a[href*="#"]')
         .not('[href="#"]')

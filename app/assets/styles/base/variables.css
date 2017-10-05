@@ -2,11 +2,14 @@
 /*Colours*/
 
 /*background colors*/
-$gradient-left: #2E3192;
-$gradient-right: #22aaaa;
+$gradient-left: #808080;
+$gradient-right: #E6E6E6;
+$section-skill-background: #ef9a9a;
+$section-about-background: #eef2f3;
+$section-contact-background: #fff;
 
 /*font colors*/
-$home-section-font-color: #F5F5F5;
+$home-section-font-color: #222;
  
 
 /* button colours */

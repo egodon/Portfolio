@@ -1,5 +1,5 @@
 .section-contact {
-  background: $almostWhite;
+  background: $section-contact-background;
   padding: 3rem 7rem;
 
 
@@ -28,9 +28,6 @@
     color: $accentColour;
   }
 
-  .btn-form-send:focus{
-    background: $veryLightGray;
-  }
 
   .btn-form-send i{
     display: none;

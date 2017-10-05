@@ -1,9 +1,17 @@
 
 .nav-bar-container{
-  margin: 0 auto;
-  position: absolute;
-  bottom: 5%;
+  margin: 1rem auto;
+  
+  /* ICONS */
+  a:hover path,
+  a:hover #linkedin-icon{
+    fill: #eceff1;
+    transition: fill .2s ease;
+  }
 
+  #linkedin-icon{
+    fill: #222;
+  }
 
   .icons-container{
     margin-bottom: 1.5rem;
@@ -28,12 +36,9 @@
         @mixin atLarge{
           transform: scale(1);
           margin: 1rem;
+           
         }
       }
-        .icon:hover{
-          transform: translateY(5px);
-          transition: transform .2s ease-in;
-        }
     }
   }
 
@@ -87,7 +92,6 @@
       a{
         padding: 0;
         color: $home-section-font-color;
-        text-shadow: 0 1px 2px rgba(0,0,0,0.20);
       }
     }
   }

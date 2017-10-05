@@ -1,8 +1,10 @@
-.section-banner {
+.section-home {
   z-index: 0;
   display: flex;
   justify-content: center;
-  position: relative;
+  flex-direction: column;
+  
+
 
   background: rgba(242,69,69,1);
   background: -moz-linear-gradient(-45deg, rgba($gradient-left,1) 0%, rgba($gradient-right,1) 100%);
@@ -25,6 +27,7 @@
     top: 0;
     user-select: none;
     z-index: 1;
+    align-self: center;
 
 
     @mixin atLarge {
@@ -34,27 +37,31 @@
 
 
   &--center {
-    padding: 0 7rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     z-index: 7;
+    height: 100%;
 
       @mixin atLarge {
         margin-top: 0;
-        padding: 3rem 7rem;
+        padding: 0 7rem;
       }
 
   }
 
   .header-container {
-    margin-top: 6rem;
-    margin-bottom: 30rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 
     .logo {
       width: 200px;
       height: 200px;
       z-index: 5;
+      align-self: center;
     }
 
     h1 {

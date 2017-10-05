@@ -1,5 +1,5 @@
 .section-about {
-  background: $veryLightGray;
+  background: $section-about-background;
 
   &--content{
     padding: 3rem 7rem;
