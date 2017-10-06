@@ -48,7 +48,7 @@ p, button, li, h4 {
   color: $darkGray;
 
   @mixin atLarge {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
     margin: 1rem 0;
     width: 100%;
   }

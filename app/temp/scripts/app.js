@@ -116,7 +116,7 @@
 	        var $submitBtn = $('#submit-btn');
 	        $submitBtn.addClass('form-submitted');
 	        $submitBtn.text('');
-	        $submitBtn.append("<div class=\"preloader-wrapper small active\">\n            <div class=\"spinner-layer spinner-red-only\">\n            <div class=\"circle-clipper left\">\n                    <div class=\"circle\"></div>\n            </div><div class=\"gap-patch\">\n                    <div class=\"circle\"></div>\n                </div><div class=\"circle-clipper right\">\n                    <div class=\"circle\"></div>\n                    </div>\n                </div>\n            </div>");
+	        $submitBtn.append("<div class=\"preloader-wrapper small active\">\n            <div class=\"spinner-layer spinner-red-only\">\n            <div class=\"circle-clipper left\">\n                    <div class=\"circle\"></div>\n            </div>\n            <div class=\"gap-patch\">\n                <div class=\"circle\"></div>\n            </div>\n            <div class=\"circle-clipper right\">\n                <div class=\"circle\"></div>\n                    </div>\n                </div>\n            </div>");
 
 	        setTimeout(function () {
 	            $submitBtn.empty();

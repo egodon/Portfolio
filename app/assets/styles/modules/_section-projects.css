@@ -5,7 +5,6 @@
 
   &--content{
     padding: 1rem 0;
-    max-width: 1800px;
     width: 90%;
 
     @mixin atXLarge{

@@ -3,9 +3,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 40rem;
   
-
-
   background: rgba(242,69,69,1);
   background: -moz-linear-gradient(-45deg, rgba($gradient-left,1) 0%, rgba($gradient-right,1) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba($gradient-left,1)), color-stop(100%, rgba($gradient-right,1)));
@@ -14,15 +13,17 @@
   background: -ms-linear-gradient(-45deg, rgba($gradient-left,1) 0%, rgba($gradient-right,1) 100%);
   background: linear-gradient(135deg, rgba($gradient-left,1) 0%, rgba($gradient-right,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f24545', endColorstr='#ebc18d', GradientType=1 );
+  
 
+  @media (min-device-width: 320px) and (orientation: portrait){
+    height: 100vh;
+  }
 
-
-  @mixin atLarge{
+  @mixin atLarge {
     height: 100vh;
   }
 
   canvas {
-    display: none;
     position: absolute;
     top: 0;
     user-select: none;
@@ -66,16 +67,17 @@
 
     h1 {
       color: $home-section-font-color;
-      font-size: 3rem;
+      font-size: 3.4rem;
       z-index: 7;
       text-shadow: 0 1px 2px rgba(0,0,0,0.20);
+      animation: fadein 1s ease;
 
       @mixin atSmall{
-        font-size: 3rem;
+        font-size: 3.4rem;
       }
 
       @mixin atMedium{
-        font-size: 2.6rem;
+        font-size: 3.4rem;
       }
 
       @mixin atLarge {
@@ -91,6 +93,7 @@
       font-weight: 300;
       margin-top: 1rem;
       z-index: 7;
+      animation: fadein 1.2s ease;
 
       @mixin atSmall{
         font-size: 2.2rem;
@@ -104,4 +107,13 @@
       }
     }
   }
+}
+
+@keyframes fadein{
+    from {opacity: 0;
+    transform: translateY(-100%);
+    }
+    to {  opacity: 1;
+    transform: translateY(1);
+    }
 }

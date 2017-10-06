@@ -1,14 +1,14 @@
 {
   "particles": {
     "number": {
-      "value": 20,
+      "value": 25,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#E6E6E6"
+      "value": "#E0E0E0"
     },
     "shape": {
       "type": "circle",
@@ -78,7 +78,7 @@
         "mode": ["repulse"]
       },
       "onclick": {
-        "enable": true,
+        "enable": false,
         "mode": "bubble"
       },
       "resize": true
