@@ -1,3 +1,10 @@
+
+html{
+    background: #E6E6E6;
+    animation: fadein-html .2s ease-in;  
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -52,4 +59,11 @@ p, button, li, h4 {
     margin: 1rem 0;
     width: 100%;
   }
+}
+
+@keyframes fadein-html{
+    from {opacity: 0;
+    }
+    to {  opacity: 1;
+    }
 }
