@@ -40,8 +40,7 @@
   },
   "scripts": {
     "start": "code . && gulp watch",
-    "build": "gulp build && npm run cname",
-    "cname": "echo egodon.me > ./docs/CNAME"
+    "build": "gulp build"
   },
   "author": "Evan Godon",
   "license": "ISC"

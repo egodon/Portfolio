@@ -4,7 +4,7 @@
 /*background colors*/
 $gradient-left: #808080;
 $gradient-right: #E6E6E6;
-$section-skill-background: #ef9a9a;
+$section-skill-background: #404040;
 $section-about-background: #eef2f3;
 $section-contact-background: #fff;
 
@@ -13,14 +13,12 @@ $home-section-font-color: #222;
  
 
 /* button colours */
-$btn-colour-one: $gradient-left;
-$btn-colour-two: #D4145A;
+$btn-colour-one: #4d4d4d;
+$btn-colour-two: #F44336;
 
-/* cards */
-
-
-
-$almostWhite: #fff;
+// General Colours 
+$white: #fff;
+$almostWhite: #eee;
 $veryLightGray: #eef2f3;
 $lightGray: #E6E6E6;
 $darkGray: #4d4d4d;

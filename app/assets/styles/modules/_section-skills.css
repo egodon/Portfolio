@@ -1,14 +1,18 @@
 .section-skills {
   background: $section-skill-background;
-  color: $darkGray;
+  color: #fff;
 
   &--content{
     padding: 1rem 0;
-    max-width: 1600px;
+    max-width: 1600px; 
     width: 90%;
 
     @mixin atXLarge{
       padding: 3rem 7rem;
+    }
+
+    .section-title{
+      color: #fff;
     }
 
 
@@ -16,6 +20,7 @@
       margin-top: 3rem;
       text-align: center;
       min-width: 330px;
+      
     }
 
     li:first-child{
@@ -54,7 +59,7 @@
     }
 
     .skills-divider {
-      border-bottom: 1px solid $darkGray;
+      border-bottom: 1px solid #fff;
       margin: auto auto;
       width: 95%;
 

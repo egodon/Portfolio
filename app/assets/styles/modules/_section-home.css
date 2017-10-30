@@ -100,9 +100,8 @@
 
       @mixin atLarge {
         font-size: 1.5rem;
-        letter-spacing: 2px;
         color: $ darkGray;
-        letter-spacing: 10px;
+        letter-spacing: 9px;
       }
     }
   }

@@ -21,7 +21,7 @@
 
     @mixin atLarge{
       height: 36px;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 
@@ -72,7 +72,7 @@
     font-size: fontSizeSmall;
     color: $formLabelColor;
     border: 1px solid $formLabelColor;
-    background: $almostWhite;
+    background: transparent;
 
     &:hover {
       color: $accentColour;

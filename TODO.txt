@@ -1,10 +1,9 @@
 
--fix font sizes
+-Edit project descriptions
 
-FEATURES ONCE FINISHED:
+
+FEATURES :
 -animate logo
--Make dark mode
 
 OPTIMIZATION:
 -lazyload images
--SVG all the things
