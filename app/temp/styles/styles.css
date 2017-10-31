@@ -113,8 +113,8 @@ p, button, li, h4 {
 
 .card-buttons {
   -webkit-transition   
-: all .2s;
-  transition: all .2s;
+: all .2s ease;
+  transition: all .2s ease;
   color: #000;
   text-align: center;
 
@@ -218,6 +218,15 @@ p, button, li, h4 {
     background:#F44336;
 
     color: #eee !important;  
+}
+
+.card-buttons a.btn-flat:disabled{
+
+    cursor: default;
+
+    background-color: transparent;
+
+    color: #4d4d4d;  
 }
 
 /*BUTTON FOR CONTACT FORM*/
@@ -368,23 +377,23 @@ p, button, li, h4 {
 
 .nav-bar-container .icons-container .icons .icon:nth-child(1){
 
-    -webkit-animation: fadein-icons 1.1s ease;
+    -webkit-animation: fadein-icons 1.8s ease;
 
-            animation: fadein-icons 1.1s ease;  
+            animation: fadein-icons 1.8s ease;  
 }
 
 .nav-bar-container .icons-container .icons .icon:nth-child(2){
 
-    -webkit-animation: fadein-icons 1.3s ease;
+    -webkit-animation: fadein-icons 2s ease;
 
-            animation: fadein-icons 1.3s ease;  
+            animation: fadein-icons 2s ease;  
 }
 
 .nav-bar-container .icons-container .icons .icon:nth-child(3){
 
-    -webkit-animation: fadein-icons 1.5s ease;
+    -webkit-animation: fadein-icons 2.2s ease;
 
-            animation: fadein-icons 1.5s ease;  
+            animation: fadein-icons 2.2s ease;  
 }
 
 .nav-bar-container .nav-bar{
@@ -702,9 +711,9 @@ p, button, li, h4 {
 
     text-shadow: 0 1px 2px rgba(0,0,0,0.20);
 
-    -webkit-animation: fadein 1.4s ease;
+    -webkit-animation: fadein 2s ease;
 
-            animation: fadein 1.4s ease;  
+            animation: fadein 2s ease;  
 }
 
 @media (min-width: 530px){
@@ -751,9 +760,9 @@ p, button, li, h4 {
 
     z-index: 7;
 
-    -webkit-animation: fadein 1.6s ease;
+    -webkit-animation: fadein 2.4s ease;
 
-            animation: fadein 1.6s ease;  
+            animation: fadein 2.4s ease;  
 }
 
 @media (min-width: 530px){
@@ -803,7 +812,7 @@ p, button, li, h4 {
 }
 
 .section-skills {
-  background: #404040;
+  background: #757575;
   color: #fff;
 
 }
