@@ -1,16 +1,12 @@
 
-html{
-    background: #E6E6E6;
-    animation: fadein-html .2s ease-in;  
-}
-
-
 body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    background: #E6E6E6;
+    animation: fadein-html .3s ease-in; 
 
-  ::selection { background: $accentColour; }
+  ::selection { background: $accent-colour; }
 
 }
 

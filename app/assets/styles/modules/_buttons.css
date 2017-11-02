@@ -49,10 +49,9 @@
     margin-right: 0 !important;
     padding: 0 1.6rem;
     background: transparent;
-    color: $accentColour !important;
+    color: $btn-colour-two !important;
 
     @mixin atLarge{
-    color: $btn-colour-two !important;
     }
 
     &:hover {
@@ -61,12 +60,6 @@
     }
   }
 
-  a.btn-flat:disabled{
-    cursor: default;
-    background-color: transparent;
-    color: $btn-colour-one; 
-
-  }
 
 }
 
@@ -83,8 +76,8 @@
     background: transparent;
 
     &:hover {
-      color: $accentColour;
-      border-color: $accentColour;
+      color: $accent-colour;
+      border-color: $accent-colour;
     }
 
     .section-contact &:focus {
@@ -99,8 +92,8 @@
 }
 
 .form-submitted{
-  color: $accentColour;
-  border-color: $accentColour;
+  color: $accent-colour;
+  border-color: $accent-colour;
   cursor: default;
   pointer-events:none;
 }

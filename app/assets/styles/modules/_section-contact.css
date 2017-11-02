@@ -3,29 +3,30 @@
   padding: 3rem 7rem;
 
 
-
+  i:not(:last-child){
+  }
 
 
   .input-field input[type]:focus + label {
-    color: $accentColour;
+    color: $accent-colour;
   }
 
   .input-field input[type]:focus {
-    border-bottom: 1px solid $accentColour;
-    box-shadow: 0 1px 0 0 $accentColour;
+    border-bottom: 1px solid $accent-colour;
+    box-shadow: 0 1px 0 0 $accent-colour;
   }
 
   .input-field .prefix.active {
-    color: $accentColour;
+    color: $accent-colour;
   }
 
   .input-field .materialize-textarea:focus{
-    box-shadow: 0 1px 0 0 $accentColour;
-    border-bottom: 1px solid $accentColour;
+    box-shadow: 0 1px 0 0 $accent-colour;
+    border-bottom: 1px solid $accent-colour;
   }
 
   .input-field .materialize-textarea:focus + label {
-    color: $accentColour;
+    color: $accent-colour;
   }
 
 

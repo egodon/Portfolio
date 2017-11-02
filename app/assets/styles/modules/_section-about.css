@@ -37,6 +37,13 @@
       font-size: 1rem;
       line-height: 1.4rem;
     }
+
+    p:before{
+    display: block;
+    content: '';
+    background: silver;
+    height: 10px;
+    }
   }
 
   img{
