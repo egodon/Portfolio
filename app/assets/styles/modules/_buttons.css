@@ -44,15 +44,14 @@
 
   }
 
+  
+
   a.btn-github {
     border: 1px solid $btn-colour-two;
     margin-right: 0 !important;
     padding: 0 1.6rem;
     background: transparent;
     color: $btn-colour-two !important;
-
-    @mixin atLarge{
-    }
 
     &:hover {
       background:$btn-colour-two;

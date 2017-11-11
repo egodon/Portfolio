@@ -30,6 +30,10 @@
   }
 
 
+  .send-btn{
+    margin-bottom: 0;
+  }
+
   .btn-form-send i{
     display: none;
 
