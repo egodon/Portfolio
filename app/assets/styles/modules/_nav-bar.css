@@ -1,27 +1,20 @@
-
-.nav-bar-container{
+.nav-bar-container {
   margin: 1rem auto;
-  
-  /* ICONS */
-  a:hover path,
-  a:hover #linkedin-icon{
-    fill: #DD2C00;
-    transition: fill .2s ease;
-  }
 
-  #linkedin-icon{
+  /* ICONS */
+
+  #linkedin-icon {
     fill: #222;
   }
 
-
-  .icons-container{
+  .icons-container {
     margin-bottom: 1.5rem;
 
     .icons {
       display: flex;
       justify-content: center;
 
-      .icon{
+      .icon {
         transform: scale(4);
 
         @mixin atSmall {
@@ -29,69 +22,65 @@
           margin: 3rem;
         }
 
-        @mixin atMedium{
+        @mixin atMedium {
           transform: scale(2);
           margin: 3rem;
         }
 
-        @mixin atLarge{
+        @mixin atLarge {
           transform: scale(1);
           margin: 1rem;
-           
         }
       }
 
-      .icon:nth-child(1){
+      .icon:nth-child(1) {
         animation: fadein-icons 1.8s ease;
       }
-      .icon:nth-child(2){
+      .icon:nth-child(2) {
         animation: fadein-icons 2s ease;
       }
-      .icon:nth-child(3){
+      .icon:nth-child(3) {
         animation: fadein-icons 2.2s ease;
       }
     }
-
   }
 
-  .nav-bar{
+  .nav-bar {
     border-top: 2px solid $home-section-font-color;
     position: relative;
     user-select: none;
 
-    ul{
+    ul {
       display: flex;
       justify-content: center;
-      li{
+      li {
         display: inline-block;
         font-size: 2.2rem;
         margin: 2rem 2rem;
         cursor: pointer;
 
-        @mixin atSmall{
+        @mixin atSmall {
           font-size: 2rem;
         }
 
-        @mixin atMedium{
-          font-size:3rem;
+        @mixin atMedium {
+          font-size: 3rem;
         }
 
-        @mixin atLarge{
-          font-size: 1.5rem;
+        @mixin atLarge {
+          font-size: 1.4rem;
         }
-
-
       }
 
-      li:after{
+      li:after {
         display: block;
         content: '';
         border-bottom: solid 2px $home-section-font-color;
         transform: scaleX(0);
         transition: transform 250ms ease-in-out;
-        transform-origin:  0% 50%;
+        transform-origin: 0% 50%;
       }
-      li:hover{
+      li:hover {
         cursor: pointer;
       }
 
@@ -99,11 +88,11 @@
         transform: scaleX(1);
       }
 
-      li:after{
-        transform-origin:  0% 50%;
+      li:after {
+        transform-origin: 0% 50%;
       }
 
-      a{
+      a {
         padding: 0;
         color: $home-section-font-color;
       }
@@ -111,11 +100,13 @@
   }
 }
 
-@keyframes fadein-icons{
-    from {opacity: 0;
+@keyframes fadein-icons {
+  from {
+    opacity: 0;
     transform: translateY(150%);
-    }
-    to {  opacity: 1;
+  }
+  to {
+    opacity: 1;
     transform: translateY(1);
-    }
+  }
 }

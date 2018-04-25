@@ -42,7 +42,7 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -62,9 +62,9 @@
 
 	// JS modules
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	'use strict';
 
@@ -91,9 +91,9 @@
 	    });
 	});
 
-/***/ },
+/***/ }),
 /* 2 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	"use strict";
 
@@ -130,9 +130,9 @@
 	    });
 	});
 
-/***/ },
+/***/ }),
 /* 3 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 	/* -----------------------------------------------
 	/* Author : Vincent Garreau  - vincentgarreau.com
@@ -1680,5 +1680,5 @@
 	exports["particlesJS"] = (window.particlesJS);
 	exports["pJSDom"] = (window.pJSDom);
 
-/***/ }
+/***/ })
 /******/ ]);

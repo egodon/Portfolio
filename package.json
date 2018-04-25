@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -39,7 +39,7 @@
     "webpack": "^1.14.0"
   },
   "scripts": {
-    "start": "code . && gulp watch",
+    "start": "gulp watch",
     "build": "gulp build"
   },
   "author": "Evan Godon",

@@ -1,46 +1,50 @@
 .section-projects {
   background: $lightGray;
 
-
-
-  &--content{
+  
+  &--content {
     padding: 1rem 0;
     width: 90%;
-
-    @mixin atXLarge{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3rem 1fr;
+    
+    @mixin atXLarge {
       padding: 3rem 7rem;
     }
+    
+    .section-title {
+      grid-column: 1 / -1;
+    }
 
-
-    div{
+    div {
       padding: 0 0;
     }
 
     .card {
       margin: 2.5rem 2rem;
-      min-height: 470px;
-      min-width: 348px;
+      min-height: 450px;
+      min-width: 300px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
 
-      @mixin atMedium{
+      @mixin atMedium {
       }
 
-      @mixin atLarge{
+      @mixin atLarge {
         height: 470px;
       }
 
-
-      img{
+      img {
         width: 100%;
 
-        @mixin atMedium{
+        @mixin atMedium {
         }
 
-        @mixin atLarge{
+        @mixin atLarge {
           height: 221.69px;
-
         }
       }
 
@@ -48,15 +52,15 @@
         color: $almostBlack;
         font-size: 2rem;
 
-        @mixin atSmall{
+        @mixin atSmall {
           font-size: 1.9rem;
         }
 
-        @mixin atMedium{
+        @mixin atMedium {
           font-size: 1.8rem;
         }
 
-        @mixin atLarge{
+        @mixin atLarge {
           font-size: 1.6rem;
         }
       }
@@ -67,32 +71,32 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        flex:1;
+        flex: 1;
 
-        @mixin atLarge{
+        @mixin atLarge {
           min-height: 0;
         }
         p {
           font-size: 2rem;
           flex: 1;
 
-          @mixin atSmall{
+          @mixin atSmall {
             font-size: 1.6rem;
           }
 
-          @mixin atMedium{
+          @mixin atMedium {
             font-size: 1.4rem;
             line-height: 1.8rem;
           }
 
-          @mixin atLarge{
+          @mixin atLarge {
             font-size: 1rem;
             line-height: 1.2rem;
           }
         }
       }
 
-      .built-with-list{
+      .built-with-list {
         margin: 1rem 0 0 0;
 
         li {
@@ -110,15 +114,12 @@
         padding: 0.5rem 0;
         display: flex;
         justify-content: center;
-        
       }
 
-      .card-buttons{
+      .card-buttons {
         align-self: flex-end;
         margin: 0.5rem 0;
       }
     }
   }
 }
-
-

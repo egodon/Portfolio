@@ -1,4 +1,4 @@
-$(() =>{
+$(() => {
     $('#contact-form').submit(function(e) {
         e.preventDefault();
         
@@ -36,15 +36,9 @@ $(() =>{
             $submitBtn.text('Message sent!');
             $submitBtn.addClass('form-submitted');
 
-
             $.each($('.form-input'),(key,value) => {
                 $(value).val('');
             })
         }, 1500);
     });
-
-    
-
-
-
 });

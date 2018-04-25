@@ -1,6 +1,6 @@
 .page-footer{
   color: $darkGray;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   background: rgba(242,69,69,1);
   background: -moz-linear-gradient(-45deg, rgba($gradient-left,1) 0%, rgba($gradient-right,1) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba($gradient-left,1)), color-stop(100%, rgba($gradient-right,1)));
@@ -9,5 +9,5 @@
   background: -ms-linear-gradient(-45deg, rgba($gradient-left,1) 0%, rgba($gradient-right,1) 100%);
   background: linear-gradient(135deg, rgba($gradient-left,1) 0%, rgba($gradient-right,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f24545', endColorstr='#ebc18d', GradientType=1 );
-
+  text-align: center;
 }
