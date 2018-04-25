@@ -1,9 +1,0 @@
-
--Edit project descriptions
-
-
-FEATURES :
--animate logo
-
-OPTIMIZATION:
--lazyload images
