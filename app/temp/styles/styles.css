@@ -109,7 +109,12 @@ p, button, li, h4 {
 .card-buttons {
   transition: all .1s ease;
   color: #000;
-  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 
 
 }
@@ -304,7 +309,7 @@ p, button, li, h4 {
 
 .nav-bar-container .icons-container .icons .icon {
 
-    transform: scale(4);
+    transform: scale(2);
 
 }
 
@@ -400,7 +405,7 @@ p, button, li, h4 {
 
     display: inline-block;
 
-    font-size: 2.2rem;
+    font-size: 2.4rem;
 
     margin: 2rem 2rem;
 
@@ -413,7 +418,7 @@ p, button, li, h4 {
     .nav-bar-container .nav-bar ul li {
 
         font-size   
-: 2rem;
+: 2.2rem;
 
     }
 
@@ -424,7 +429,7 @@ p, button, li, h4 {
     .nav-bar-container .nav-bar ul li {
 
         font-size   
-: 3rem;
+: 2rem;
 
     }
 
@@ -629,9 +634,9 @@ p, button, li, h4 {
 
 .section-home .header-container .logo-container {
 
-    width: 200px;
+    width: 150px;
 
-    height: 200px;
+    height: 150px;
 
     -ms-flex-item-align: center;
 
@@ -762,17 +767,17 @@ p, button, li, h4 {
 
     display: grid;
 
-    -ms-grid-columns: (1fr)[4];
+    -ms-grid-columns: (minmax(28rem, max-content))[auto-fit];
 
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(28rem, max-content));
 
-    -ms-grid-rows: 3rem 1fr;
+    -ms-flex-pack: center;
 
-        grid-template-rows: 3rem 1fr;
+        justify-content: center;
 
 }
 
-@media (min-width: 2100px) {
+@media (min-width: 1080px) {
 
     .section-projects--content {
 
@@ -801,7 +806,9 @@ p, button, li, h4 {
 
     min-height: 450px;
 
-    min-width: 300px;
+    min-width: 350px;
+
+    max-width: 445px;
 
     display: -ms-flexbox;
 
@@ -976,7 +983,9 @@ p, button, li, h4 {
 
 .section-projects--content .card .built-with-list {
 
-    margin: 1rem 0 0 0;
+    margin: 0.5rem 0 0 0;
+
+    text-align: center;
 
 }
 

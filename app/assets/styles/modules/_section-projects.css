@@ -1,19 +1,19 @@
 .section-projects {
   background: $lightGray;
 
-  
   &--content {
     padding: 1rem 0;
     width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 3rem 1fr;
-    
-    @mixin atXLarge {
+    grid-template-columns: repeat(auto-fit, minmax(28rem, max-content));
+    justify-content: center;
+
+    @mixin atLarge {
       padding: 3rem 7rem;
+      
     }
-    
+
     .section-title {
       grid-column: 1 / -1;
     }
@@ -25,7 +25,8 @@
     .card {
       margin: 2.5rem 2rem;
       min-height: 450px;
-      min-width: 300px;
+      min-width: 350px;
+      max-width: 445px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -97,7 +98,8 @@
       }
 
       .built-with-list {
-        margin: 1rem 0 0 0;
+        margin: 0.5rem 0 0 0;
+        text-align: center;
 
         li {
           color: $darkGray;

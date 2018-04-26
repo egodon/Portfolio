@@ -2,7 +2,9 @@
 .card-buttons {
   transition: all .1s ease;
   color: #000;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .btn-flat{
     height: 60px;
